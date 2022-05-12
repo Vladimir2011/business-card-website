@@ -15,7 +15,7 @@
       </nav>
       <div class="header__locales localization">
         <button class="localization__button localization__button-active">RU</button>
-        <button class="localization__button">EN</button>
+        <button class="localization__button">ENG</button>
       </div>
     </div>
   </header>

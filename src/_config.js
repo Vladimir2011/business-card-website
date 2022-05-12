@@ -7,7 +7,7 @@ export const process = {
 // }
 
 export const app = {
-  title: 'Title'
+  title: 'Title майтл'
 }
 
 export const links = [

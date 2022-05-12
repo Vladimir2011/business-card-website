@@ -76,6 +76,11 @@ section,
   }
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
 @import './common/_common';
 @import './helpers/_helpers';
-@import 'utils/fonts';
+@import './utils/fonts';

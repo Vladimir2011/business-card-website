@@ -26,6 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+  height: 100%;
   background-color: $default-color;
 }
 
@@ -79,6 +80,16 @@ section,
 .container {
   margin: 0 auto;
   padding: 0 100px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 @import './common/_common';

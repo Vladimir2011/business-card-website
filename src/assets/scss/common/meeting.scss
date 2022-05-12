@@ -1,0 +1,46 @@
+.meeting {
+  min-height: 700px;
+  background: url('./../../static/header-background.png') no-repeat;
+  background-size: cover;
+  .meeting__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .meeting__info-block {
+      display: flex;
+      flex-direction: column;
+      .meeting__paragraph {
+        font-size: $bodyFontSize;
+        line-height: $mainLineHeight;
+        color: $light-color;
+      }
+      .meeting__header {
+        font-size: $h1FontSize;
+        line-height: $mainLineHeight;
+        color: $light-color;
+      }
+      .meeting__profession-name {
+        font-size: $h2FontSize;
+        line-height: $mainLineHeight;
+        color: $primary-color;
+      }
+      .meeting__comments-list {
+        margin-top: 40px;
+        .meeting__comments-item {
+          font-size: $subTitleFontSize;
+          line-height: $mainLineHeight;
+        }
+
+        .meeting__comments-item--variable {
+          .meeting__comments-item-span-var {
+            color: $success-color;
+          }
+
+          .meeting__comments-item-span-link {
+            color: $warning-color;
+          }
+        }
+      }
+    }
+  }
+}

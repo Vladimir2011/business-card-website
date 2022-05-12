@@ -1,0 +1,86 @@
+.header {
+  .header__container {
+    padding: 0 32px;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #1E2D3D;
+
+    .header__logo-text {
+      display: block;
+      padding: 18px;
+      font-size: $subTitleFontSize;
+      line-height: $mainLineHeight;
+    }
+
+    .header__nav {
+      flex: 1 1 0;
+    }
+
+    .header__locales {
+
+    }
+  }
+}
+
+.nav {
+  .nav__list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .nav__item {
+      .nav__link {
+        display: block;
+        padding: 18px 32px;
+        text-align: center;
+        border-left: 1px solid #1E2D3D;
+        font-size: $subTitleFontSize;
+        line-height: $mainLineHeight;
+        max-width: 150px;
+        &:hover {
+          color: $light-color;
+        }
+        &:active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.localization {
+  padding: 18px 0 18px 32px;
+  border-left: 1px solid #1E2D3D;
+  display: block;
+  .localization__button {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: $subTitleFontSize;
+    line-height: $mainLineHeight;
+    color: $mainFontColor;
+    cursor: pointer;
+    &:hover {
+      color: $light-color;
+    }
+  }
+
+  .localization__button-active {
+    position: relative;
+    &:hover {
+      color: $mainFontColor;
+    }
+    &:after {
+      content:"";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background: $mainFontColor;
+    }
+  }
+}

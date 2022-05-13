@@ -3,19 +3,150 @@
   .about__container {
     min-height: 641px;
     background-color: $aboutSectionColor;
-    border: 1px solid #1E2D3D;
+    border: 1px solid $borderAboutSectionColor;
     border-radius: 8px;
     display: flex;
     .about__categories-wrapper {
       max-width: 222px;
       width: 222px;
-      border-right: 1px solid #1E2D3D;
-      .about__categories-header {
-        text-align: start;
-        color: $g-0;
-        padding: 20px 5px 20px 10px;
-        display: block;
-        border-bottom: 1px solid #1E2D3D;
+      border-right: 1px solid $borderAboutSectionColor;
+      .about__categories-header-wrapper {
+        display: flex;
+        border-bottom: 1px solid $borderAboutSectionColor;
+        max-height: 64px;
+        .about__categories-icon {
+          padding-left: 20px;
+        }
+        .about__categories-header {
+          text-align: start;
+          color: $g-0;
+          padding: 20px 5px 20px 10px;
+          display: block;
+        }
+      }
+
+      .about__categories-list {
+        margin-top: 20px;
+        .about__categories-item {
+          font-size: $subTitleFontSize;
+          line-height: $mainLineHeight;
+          margin-bottom: 15px;
+          padding: 2px 0 2px 20px;
+          cursor: pointer;
+
+          display: flex;
+          align-items: center;
+          .about__categories-item-icon {
+            padding-right: 11px;
+          }
+          .about__categories-item-icon--arrow {
+            padding-right: 16px;
+          }
+        }
+        .about__categories-item-active {
+          background: $black-color;
+          color: $g-0;
+        }
+      }
+    }
+
+    .about__text-wrapper {
+      flex: 1 1 0;
+      .about__text-header {
+        height: 64px;
+        border-bottom: 1px solid $borderAboutSectionColor;
+      }
+
+      .about__text-container {
+        padding: 20px;
+        display: flex;
+        .about__numbers-list {
+          margin-right: 32px;
+          line-height: 1.4;
+          width: fit-content;
+          .about__numbers-item {
+            color: $light-color;
+          }
+        }
+
+        .about__main-text-container {
+          flex: 1 1 0;
+          .about__main-text-header {
+            color: $danger-color;
+            line-height: $mainLineHeight;
+            padding-bottom: 26px;
+          }
+
+          .about__main-text-header--job {
+            color: $primary-color;
+          }
+
+          .about__main-text {
+            line-height: 1.5;
+            padding-bottom: 26px;
+            color: $g-0;
+          }
+
+          .about__main-text--job {
+            color: $danger-color;
+          }
+        }
+
+        .about__skills-list {
+          .about__skills-item {
+            .about__skills-name-block {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              margin-bottom: 8px;
+
+              .about__skills-image {
+                margin-right: 8px;
+              }
+
+              .about__skills-name {
+                font-size: $subTitleFontSize;
+                line-height: $mainLineHeight;
+                color: $light-color;
+              }
+            }
+
+            .about__progress {
+              height: 8px;
+              background-color: $black-color;
+              justify-content: flex-start;
+              border-radius: 8px;
+              align-items: center;
+              position: relative;
+              display: flex;
+              .progress-value {
+                animation: load 3s normal forwards;
+                border-radius: 8px;
+                background-color: $primary-color;
+                width: 0;
+                height: 8px;
+              }
+
+              .css {
+                animation: loadCss 3s normal forwards;
+              }
+
+              @keyframes load {
+                0% { width: 0; }
+                100% { width: 68%; }
+              }
+
+              @keyframes loadCss {
+                0% { width: 0; }
+                100% { width: 98%; }
+              }
+            }
+          }
+        }
+      }
+
+      .about__text-container--skills {
+        padding: 20px 73px;
       }
     }
   }

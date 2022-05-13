@@ -16,3 +16,21 @@ export const links = [
     alias: 'contacts',
   }
 ]
+
+export const categories = [
+  {
+    name: 'Обо мне',
+    icon: 'about-folder-icon.svg',
+    id: 1
+  },
+  {
+    name: 'Опыт',
+    icon: 'exp-folder-icon.svg',
+    id: 2
+  },
+  {
+    name: 'Скиллы',
+    icon: 'skills-folder-icon.svg',
+    id: 3
+  }
+]

@@ -1,0 +1,24 @@
+.nav {
+  .nav__list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .nav__item {
+      .nav__link {
+        display: block;
+        padding: 18px 32px;
+        text-align: center;
+        border-left: 1px solid #1E2D3D;
+        font-size: $subTitleFontSize;
+        line-height: $mainLineHeight;
+        max-width: 150px;
+        &:hover {
+          color: $light-color;
+        }
+        &:active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

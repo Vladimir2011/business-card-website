@@ -1,0 +1,22 @@
+.about {
+  padding-bottom: 100px;
+  .about__container {
+    min-height: 641px;
+    background-color: $aboutSectionColor;
+    border: 1px solid #1E2D3D;
+    border-radius: 8px;
+    display: flex;
+    .about__categories-wrapper {
+      max-width: 222px;
+      width: 222px;
+      border-right: 1px solid #1E2D3D;
+      .about__categories-header {
+        text-align: start;
+        color: $g-0;
+        padding: 20px 5px 20px 10px;
+        display: block;
+        border-bottom: 1px solid #1E2D3D;
+      }
+    }
+  }
+}

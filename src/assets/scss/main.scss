@@ -48,6 +48,15 @@ h6 {
 input,
 textarea,
 select,
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 
 a {
   text-decoration: none;
@@ -59,22 +68,6 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-footer, // also footer if footer without section
-section,
-.section {
-  position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
 }
 
 .container {

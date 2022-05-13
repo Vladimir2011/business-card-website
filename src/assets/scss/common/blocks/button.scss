@@ -1,0 +1,16 @@
+.btn {
+  width: fit-content;
+  padding: 10px 14px;
+  text-align: center;
+  color: #01080E;
+  background-color: $warning-color;
+  border-radius: 8px;
+  font-size: $buttonFontSize;
+  &:hover {
+    background-color: #FFB67C;
+  }
+
+  &:active {
+    background-color: #FFC99F;
+  }
+}

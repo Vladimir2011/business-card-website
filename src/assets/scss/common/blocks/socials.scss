@@ -1,0 +1,20 @@
+.socials {
+  .socials__list {
+    .socials__item {
+      display: flex;
+      padding-bottom: 24px;
+      .socials__svg-icon {
+        padding-right: 18px;
+      }
+      .socials__link {
+        color: $primary-color;
+      }
+      .socials__link--github {
+        color: $warning-color;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

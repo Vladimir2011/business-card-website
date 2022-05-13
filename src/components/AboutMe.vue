@@ -49,20 +49,17 @@
         <!--3ий таб-->
         <div v-show="selectedIndex === 2" class="about__text-container about__text-container--skills">
           <ul class="about__skills-list">
-            <li class="about__skills-item">
+            <li
+              v-for="skill in skillsList"
+              :key="skill.id"
+              class="about__skills-item"
+            >
               <div class="about__skills-name-block">
-                <img class="about__skills-image" src="@/static/svg/html-icon.svg" alt="icon">
-                <p class="about__skills-name">HTML</p>
+                <img class="about__skills-image" :src="require('@/static/svg/' + skill.icon)" alt="icon">
+                <p class="about__skills-name">{{ skill.name }}</p>
               </div>
               <div class="about__progress">
-                <div class="progress-value" />
-              </div>
-              <div class="about__skills-name-block">
-                <img class="about__skills-image" src="@/static/svg/css-icon.svg" alt="icon">
-                <p class="about__skills-name">CSS</p>
-              </div>
-              <div class="about__progress">
-                <div class="progress-value css" />
+                <div class="progress-value" :class="skill.class" />
               </div>
             </li>
           </ul>
@@ -74,7 +71,7 @@
 
 <script>
 import TabItem from '@/components/tabs/TabItem'
-import { categories } from '@/_config'
+import { categories, skills } from '@/_config'
 import { ref } from 'vue'
 
 export default {
@@ -83,6 +80,7 @@ export default {
   },
   setup () {
     let tabs = categories
+    let skillsList = skills
     let selectedIndex = ref(0)
 
     const selectTab = (i) => {
@@ -94,7 +92,8 @@ export default {
     return {
       tabs,
       selectedIndex,
-      selectTab
+      selectTab,
+      skillsList
     }
   }
 }

@@ -93,7 +93,13 @@
         }
 
         .about__skills-list {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100%;
           .about__skills-item {
+            flex: 42%;
+            margin: 0 49px 20px 0;
             .about__skills-name-block {
               display: flex;
               justify-content: start;
@@ -120,26 +126,107 @@
               position: relative;
               display: flex;
               .progress-value {
-                animation: load 3s normal forwards;
                 border-radius: 8px;
                 background-color: $primary-color;
                 width: 0;
                 height: 8px;
               }
 
-              .css {
-                animation: loadCss 3s normal forwards;
+              // Анимация скиллов
+
+              .vue {
+                animation: loadVue 2.5s normal forwards;
               }
 
-              @keyframes load {
+              @keyframes loadVue {
                 0% { width: 0; }
-                100% { width: 68%; }
+                100% { width: 80%; }
+              }
+
+              .nuxt {
+                animation: loadNuxt 2.5s normal forwards;
+              }
+
+              @keyframes loadNuxt {
+                0% { width: 0; }
+                100% { width: 80%; }
+              }
+
+              .vuex {
+                animation: loadVuex 2.5s normal forwards;
+              }
+
+              @keyframes loadVuex {
+                0% { width: 0; }
+                100% { width: 80%; }
+              }
+
+              .vuetify {
+                animation: loadVuetify 2.5s normal forwards;
+              }
+
+              @keyframes loadVuetify {
+                0% { width: 0; }
+                100% { width: 60%; }
+              }
+
+              .js {
+                animation: loadJS 2.5s normal forwards;
+              }
+
+              @keyframes loadJS {
+                0% { width: 0; }
+                100% { width: 75%; }
+              }
+
+              .ts {
+                animation: loadTS 2.5s normal forwards;
+              }
+
+              @keyframes loadTS {
+                0% { width: 0; }
+                100% { width: 45%; }
+              }
+
+              .scss {
+                animation: loadScss 2.5s normal forwards;
+              }
+
+              @keyframes loadScss {
+                0% { width: 0; }
+                100% { width: 90%; }
+              }
+
+              .webpack {
+                animation: loadWebpack 2.5s normal forwards;
+              }
+
+              @keyframes loadWebpack {
+                0% { width: 0; }
+                100% { width: 75%; }
+              }
+
+              .html {
+                animation: loadHtml 2.5s normal forwards;
+              }
+
+              @keyframes loadHtml {
+                0% { width: 0; }
+                100% { width: 95%; }
+              }
+
+              .css {
+                animation: loadCss 2.5s normal forwards;
               }
 
               @keyframes loadCss {
                 0% { width: 0; }
-                100% { width: 98%; }
+                100% { width: 95%; }
               }
+            }
+
+            &:nth-child(even) {
+              margin-right: 0;
             }
           }
         }

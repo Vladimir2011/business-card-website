@@ -1,8 +1,6 @@
 .meeting {
-  min-height: 700px;
-  background: url('./../../static/header-background.png') no-repeat;
-  background-size: cover;
-  padding: 24px 0 50px 0;
+  min-height: 650px;
+  padding-bottom: 50px;
   .meeting__container {
     display: flex;
     align-items: center;
@@ -26,7 +24,7 @@
         color: $primary-color;
       }
       .meeting__comments-list {
-        margin:40px 0;
+        margin: 40px 0;
         .meeting__comments-item {
           font-size: $subTitleFontSize;
           line-height: $mainLineHeight;
@@ -41,6 +39,37 @@
             color: $warning-color;
           }
         }
+      }
+    }
+    .meeting__image-container {
+      position: relative;
+      z-index: 2;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 8%;
+        width: 50%;
+        height: 50%;
+        background: #222C7C;
+        opacity: 0.4;
+        filter: blur(174px);
+        transform: matrix(0.97, 0.23, -0.23, 0.97, 0, 0);
+        z-index: -1;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 16%;
+        left: 28%;
+        width: 60%;
+        height: 50%;
+        background: #178464;
+        opacity: 0.4;
+        filter: blur(174px);
+        transform: matrix(-0.08, -1, 1, -0.08, 0, 0);
+        z-index: -1;
       }
     }
   }

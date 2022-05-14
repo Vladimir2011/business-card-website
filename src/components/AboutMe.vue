@@ -87,7 +87,7 @@
 
         <TabItem v-show="selectedIndex === 4">
           <div class="about__main-text-container">
-            <p class="about__main-text-header about__main-text-header--job">&lt;/Interest&gt;</p>
+            <p class="about__main-text-header about__main-text-header--job">&lt;/Interests></p>
 
             <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
           </div>

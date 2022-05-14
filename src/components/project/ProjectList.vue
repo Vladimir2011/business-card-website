@@ -1,13 +1,13 @@
 <template>
-<p>List Project</p>
+  <ul class="projects__list">
+    <ProjectItem />
+  </ul>
 </template>
 
 <script>
+import ProjectItem from '@/components/project/ProjectItem'
+
 export default {
-  name: "ProjectList"
+  components: { ProjectItem }
 }
 </script>
-
-<style scoped>
-
-</style>

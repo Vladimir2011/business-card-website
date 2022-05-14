@@ -1,13 +1,16 @@
 <template>
-  <div></div>
+  <section class="projects">
+    <h2 class="projects__header section-title">Проекты</h2>
+    <div class="projects__wrapper">
+      <ProjectList />
+    </div>
+  </section>
 </template>
 
 <script>
+import ProjectList from '@/components/project/ProjectList'
+
 export default {
-  name: "Projects"
+  components: { ProjectList }
 }
 </script>
-
-<style scoped>
-
-</style>

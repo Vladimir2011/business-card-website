@@ -1,14 +1,16 @@
 @import 'header';
 @import 'meeting';
 @import 'features';
+@import 'about';
+@import 'projects';
 @import 'contacts';
 @import 'footer';
-@import 'about';
 
 // БЭМ Блоки
 @import 'blocks/button';
 @import "blocks/socials";
 @import "blocks/nav";
+@import "blocks/project";
 
 .section-title {
   font-size: $h2FontSize;

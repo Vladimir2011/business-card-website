@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" @click="handleDownloadCV">{{ name }}</button>
+  <button class="btn" @click="handleDownloadCV" :class="className">{{ name }}</button>
 </template>
 
 <script>
@@ -8,6 +8,9 @@
       name: {
         type: String,
         required: true
+      },
+      className: {
+        type: String
       }
     },
     setup () {

@@ -9,7 +9,7 @@
             :key="link.alias"
             class="nav__item"
           >
-            <a class="nav__link" href="#">{{ link.title }}</a>
+            <a class="nav__link" :href="'#' + link.alias">{{ link.title }}</a>
           </li>
         </ul>
       </nav>

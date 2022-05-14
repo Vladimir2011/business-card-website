@@ -107,3 +107,38 @@ export const skills = [
     id: 10
   },
 ]
+
+export const projects = [
+  {
+    name: 'Gaijin Entertainment',
+    type: '_e-commerce',
+    description: 'Сайт магазина официального мерча Gaijin Entertainment.',
+    image: 'project-image.jpeg',
+    link: '',
+    id: 1
+  },
+  {
+    name: 'Escape From Tarkov',
+    type: '_e-commerce',
+    description: 'Официальный магазин игры Escape From Tarkov.',
+    image: 'project-image.jpeg',
+    link: '',
+    id: 2
+  },
+  {
+    name: 'CleverBaby',
+    type: '_landing-page',
+    description: 'Школа английского языка для детей.',
+    image: 'project-image.jpeg',
+    link: 'https://github.com/Vladimir2011/CleverBaby',
+    id: 3
+  },
+  {
+    name: 'Garbuzzov',
+    type: '_landing-page',
+    description: 'Сайт визитка прекрасного человека и разработчика.',
+    image: 'project-image.jpeg',
+    link: 'https://github.com/Vladimir2011/business-card-website',
+    id: 4
+  },
+]

@@ -1,5 +1,5 @@
 <template>
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="contacts__container">
     <div class="contacts__info-wrapper">
       <h2 class="contacts__header section-title">Связаться со мной</h2>

@@ -81,14 +81,18 @@
             color: $primary-color;
           }
 
+          .about__main-text--job {
+            color: $danger-color;
+          }
+
+          .about__main-text-header--education {
+            color: $success-color;
+          }
+
           .about__main-text {
             line-height: 1.5;
             padding-bottom: 26px;
             color: $g-0;
-          }
-
-          .about__main-text--job {
-            color: $danger-color;
           }
         }
 

@@ -64,6 +64,34 @@
             </li>
           </ul>
         </div>
+
+        <TabItem v-show="selectedIndex === 3">
+          <div class="about__main-text-container">
+            <p class="about__main-text-header about__main-text-header--education">&lt;/Education&gt;</p>
+
+            <p class="about__main-text--job">Московский государственный строительный университет (2018 год)</p>
+            <p class="about__main-text">Экономика, Экономика и управление на предприятии (Бакалавр)</p>
+
+            <p class="about__main-text-header about__main-text-header--education">&lt;/Courses&gt;</p>
+
+            <p class="about__main-text--job">Курс Vue.js 3 + Nuxt.js 3 (2022 год)</p>
+            <p class="about__main-text">Youtube</p>
+            <p class="about__main-text--job">Курс Vue.js (2021 год)</p>
+            <p class="about__main-text">Владилен Минин</p>
+            <p class="about__main-text--job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
+            <p class="about__main-text">Яндекс</p>
+            <p class="about__main-text--job">Интенсив по верстке (2 уровня) (2019 год)</p>
+            <p class="about__main-text">HTML Academy</p>
+          </div>
+        </TabItem>
+
+        <TabItem v-show="selectedIndex === 4">
+          <div class="about__main-text-container">
+            <p class="about__main-text-header about__main-text-header--job">&lt;/Interest&gt;</p>
+
+            <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
+          </div>
+        </TabItem>
       </div>
     </div>
   </section>

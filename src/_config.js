@@ -32,6 +32,16 @@ export const categories = [
     name: 'Скиллы',
     icon: 'skills-folder-icon.svg',
     id: 3
+  },
+  {
+    name: 'Образование',
+    icon: 'education-folder-icon.svg',
+    id: 4
+  },
+  {
+    name: 'Интересы',
+    icon: 'hobby-folder-icon.svg',
+    id: 5
   }
 ]
 

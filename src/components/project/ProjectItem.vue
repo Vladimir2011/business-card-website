@@ -21,6 +21,7 @@
           <Button
               name="view-project"
               class-name="project__button"
+              @button-click="openPopup"
           />
           <a
             v-if="project.link !== ''"
@@ -45,8 +46,13 @@ export default {
   setup () {
     let projectsList = projects
 
+    const openPopup = () => {
+      console.log('Открываем пивко')
+    }
+
     return {
-      projectsList
+      projectsList,
+      openPopup
     }
   }
 }

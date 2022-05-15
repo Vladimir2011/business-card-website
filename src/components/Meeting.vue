@@ -13,9 +13,7 @@
               <span class="meeting__comments-item-span-var">const githubLink</span> = <a href="https://github.com/Vladimir2011" target="_blank" class="meeting__comments-item-span-link">"https://github.com/Vladimir2011"</a>
             </li>
           </ul>
-          <Button
-            :name="'Скачать резюме'"
-          />
+          <a href="https://disk.yandex.ru/i/pg0iiJT-NUSkew" download target="_blank" class="meeting__button btn">Скачать резюме</a>
         </div>
         <div class="meeting__image-container">
           <img src="@/static/photo.png" alt="photo" class="meeting_image">
@@ -26,9 +24,5 @@
 </template>
 
 <script>
-import Button from '@/components/Button'
-
-export default {
-  components: { Button }
-}
+export default {}
 </script>

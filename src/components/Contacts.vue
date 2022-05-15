@@ -4,9 +4,7 @@
     <div class="contacts__info-wrapper">
       <h2 class="contacts__header section-title">Связаться со мной</h2>
       <p class="contacts__paragraph">Буду благодарен за обратную связь по проектам. Пишите или звоните, буду рад сотрудничеству.</p>
-      <Button
-        :name="'Скачать резюме'"
-      />
+      <a href="https://disk.yandex.ru/i/pg0iiJT-NUSkew" download target="_blank" class="contacts__button btn">Скачать резюме</a>
     </div>
     <div class="contacts__socials-wrapper socials">
       <ul class="socials__list">
@@ -33,9 +31,5 @@
 </template>
 
 <script>
-import Button from '@/components/Button'
-
-export default {
-  components: { Button }
-}
+export default {}
 </script>

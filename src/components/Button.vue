@@ -1,9 +1,10 @@
 <template>
-  <button class="btn" @click="handleDownloadCV" :class="className">{{ name }}</button>
+  <button class="btn" @click="buttonClick" :class="className">{{ name }}</button>
 </template>
 
 <script>
   export default {
+    emits: ['buttonClick'],
     props: {
       name: {
         type: String,
@@ -13,13 +14,18 @@
         type: String
       }
     },
-    setup () {
+    setup (_, { emit }) {
+      const buttonClick = () => {
+        emit('buttonClick')
+      }
+
       const handleDownloadCV = () => {
         console.log('Скачал резюме')
       }
 
       return {
-        handleDownloadCV
+        handleDownloadCV,
+        buttonClick
       }
     }
   }

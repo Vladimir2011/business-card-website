@@ -113,32 +113,70 @@ export const projects = [
     name: 'Gaijin Entertainment',
     type: '_e-commerce',
     description: 'Сайт магазина официального мерча Gaijin Entertainment.',
-    image: 'project-image.jpeg',
+    image: 'gaijin-project-image.png',
     link: '',
-    id: 1
+    id: 1,
+    technologies: [
+      {
+        id: 1,
+        icon: 'vue.svg',
+        class: 'vue'
+      },
+      {
+        id: 2,
+        icon: 'nuxt.svg',
+        class: 'nuxt'
+      }
+    ]
   },
   {
     name: 'Escape From Tarkov',
     type: '_e-commerce',
     description: 'Официальный магазин игры Escape From Tarkov.',
-    image: 'project-image.jpeg',
+    image: 'tarkov-project-image.png',
     link: '',
-    id: 2
+    id: 2,
+    technologies: [
+      {
+        id: 1,
+        icon: 'vue.svg',
+        class: 'vue'
+      },
+      {
+        id: 2,
+        icon: 'nuxt.svg',
+        class: 'nuxt'
+      }
+    ]
   },
   {
     name: 'CleverBaby',
     type: '_landing-page',
     description: 'Школа английского языка для детей.',
-    image: 'project-image.jpeg',
+    image: 'cleverBaby-project-image.png',
     link: 'https://github.com/Vladimir2011/CleverBaby',
-    id: 3
+    id: 3,
+    technologies: [
+      {
+        id: 1,
+        icon: 'js.svg',
+        class: 'js'
+      }
+    ]
   },
   {
     name: 'Garbuzzov',
     type: '_landing-page',
     description: 'Сайт визитка прекрасного человека и разработчика.',
-    image: 'project-image.jpeg',
+    image: 'garbuzov-project-image.png',
     link: 'https://github.com/Vladimir2011/business-card-website',
-    id: 4
+    id: 4,
+    technologies: [
+      {
+        id: 1,
+        icon: 'vue.svg',
+        class: 'vue'
+      },
+    ]
   },
 ]

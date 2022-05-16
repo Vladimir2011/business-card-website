@@ -12,6 +12,18 @@
     <div class="project__block">
       <div class="project__image-wrapper">
         <img :src="require('@/static/' + project.image)" alt="image" class="project__image">
+        <ul class="project__tech-list">
+          <li class="project__tech-item">
+            <div
+              v-for="tech in project.technologies"
+              :key="tech.id"
+              class="project__tech-image-wrapper"
+              :class="tech.class"
+            >
+              <img :src="require('@/static/svg/technologies/' + tech.icon)" alt="icon" class="project__tech-image">
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="project__description-wrapper">
         <p class="project__description">

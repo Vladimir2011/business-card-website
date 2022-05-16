@@ -30,12 +30,53 @@
   .project__image-wrapper {
     height: 145px;
     border-bottom: 1px solid $borderAboutSectionColor;
+    position: relative;
     .project__image {
       height: inherit;
       width: 100%;
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
+    }
+
+    .project__tech-list {
+      position: absolute;
+      content: '';
+      top: 20px;
+      right: 20px;
+      .project__tech-item {
+        display: flex;
+        align-items: center;
+        .project__tech-image-wrapper {
+          margin-right: 10px;
+          border-radius: 2px;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+
+          .project__tech-image {
+            width: 18px;
+            height: 18px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        // цвета бекграундов иконок
+
+        .vue {
+          background-color: #4FC08D;
+        }
+
+        .nuxt {
+          background-color: #00DC82;
+        }
+
+        .js {
+          background-color: yellow;
+        }
+      }
     }
   }
 

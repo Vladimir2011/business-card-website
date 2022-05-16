@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" @click="buttonClick" :class="className">{{ name }}</button>
+  <button class="btn" @click="clickButton" :class="className">{{ name }}</button>
 </template>
 
 <script>
@@ -15,17 +15,12 @@
       }
     },
     setup (_, { emit }) {
-      const buttonClick = () => {
-        emit('buttonClick')
-      }
-
-      const handleDownloadCV = () => {
-        console.log('Скачал резюме')
+      const clickButton = () => {
+        emit('buttonClick', event)
       }
 
       return {
-        handleDownloadCV,
-        buttonClick
+        clickButton
       }
     }
   }

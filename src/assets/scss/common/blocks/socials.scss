@@ -18,3 +18,20 @@
     }
   }
 }
+
+@media screen and (max-width: $desktopWidth) {
+  .socials {
+    .socials__list {
+      .socials__item {
+        display: flex;
+        padding-bottom: 15px;
+        .socials__svg-icon {
+          padding-right: 12px;
+        }
+        .socials__link {
+          font-size: $subTitleFontSize;
+        }
+      }
+    }
+  }
+}

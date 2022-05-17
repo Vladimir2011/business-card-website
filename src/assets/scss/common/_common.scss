@@ -18,4 +18,8 @@
   line-height: $mainLineHeight;
   color: $headerSectionColor;
   font-weight: 500;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

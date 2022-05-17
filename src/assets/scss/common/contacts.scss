@@ -16,3 +16,22 @@
     }
   }
 }
+
+@media screen and (max-width: $desktopWidth) {
+  .contacts {
+    padding-bottom: 10px;
+    .contacts__container {
+      align-items: flex-end;
+      .contacts__info-wrapper {
+        width: calc(50% - 16px);
+        .contacts__header {
+          margin-bottom: 24px;
+        }
+        .contacts__paragraph {
+          margin-bottom: 24px;
+          font-size: $subTitleFontSize;
+        }
+      }
+    }
+  }
+}

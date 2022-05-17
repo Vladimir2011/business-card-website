@@ -38,7 +38,7 @@
                     :id="project.id"
                     :name="'view-project'"
                     :class-name="'project__button'"
-                    @buttonClick="openPopup"
+                    @buttonClick="openPopup($event)"
                 />
                 <a
                     v-if="project.link !== ''"
@@ -54,7 +54,7 @@
 
           <Modal
             v-if="popupIsOpen"
-            :id-modal="projectPopup.id"
+            :project="projectPopup"
           />
         </li>
       </ul>
@@ -74,14 +74,16 @@ export default {
   setup () {
     let projectsList = projects
     let popupIsOpen = ref(false)
-    let projectPopup = {}
+    let projectPopup = ref({})
 
+    // Проверяем по кнопке какого проекта мы нажали
     const openPopup = (event) => {
       popupIsOpen.value = !popupIsOpen.value
 
-      projectsList.forEach(item => {
-        console.log('ITEM: ' + item.id)
-        console.log('Event: ' + event.target.id)
+      projectsList.forEach((item) => {
+        if (item.id === +event.target.id) {
+          projectPopup.value = item.popupInfo
+        }
       })
     }
 

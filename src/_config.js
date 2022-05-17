@@ -127,7 +127,40 @@ export const projects = [
         icon: 'nuxt.svg',
         class: 'nuxt'
       }
-    ]
+    ],
+    popupInfo: {
+      name: 'Сайт магазина официального мерча Gaijin Entertainment \n' +
+        'для игр Enlsited и Warthunder',
+      link: 'https://gaijin.grey-shop.com',
+      stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      functional: [
+        {
+          id: 1,
+          name: 'Адаптивная и кросс-браузерная верстка'
+        },
+        {
+          id: 2,
+          name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript'
+        },
+        {
+          id: 3,
+          name: 'Исправление багов'
+        },
+        {
+          id: 4,
+          name: 'Поддержка и развитие текущей архитектуры на основе компонентов'
+        },
+        {
+          id: 5,
+          name: 'Доработка существующих проектов, повышение их удобства'
+        },
+        {
+          id: 6,
+          name: 'SEO оптимизация'
+        }
+      ],
+      additional: ''
+    }
   },
   {
     name: 'Escape From Tarkov',
@@ -147,7 +180,39 @@ export const projects = [
         icon: 'nuxt.svg',
         class: 'nuxt'
       }
-    ]
+    ],
+    popupInfo: {
+      name: 'Официальный магазин игры Escape From Tarkov',
+      link: 'https://gaijin.grey-shop.com',
+      stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      functional: [
+        {
+          id: 1,
+          name: 'Адаптивная и кросс-браузерная верстка'
+        },
+        {
+          id: 2,
+          name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript'
+        },
+        {
+          id: 3,
+          name: 'Исправление багов'
+        },
+        {
+          id: 4,
+          name: 'Поддержка и развитие текущей архитектуры на основе компонентов'
+        },
+        {
+          id: 5,
+          name: 'Доработка существующих проектов, повышение их удобства'
+        },
+        {
+          id: 6,
+          name: 'SEO оптимизация'
+        }
+      ],
+      additional: ''
+    }
   },
   {
     name: 'CleverBaby',
@@ -162,7 +227,39 @@ export const projects = [
         icon: 'js.svg',
         class: 'js'
       }
-    ]
+    ],
+    popupInfo: {
+      name: 'Сайт школы английского языка для детей CleverBaby',
+      link: 'https://gaijin.grey-shop.com',
+      stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      functional: [
+        {
+          id: 1,
+          name: 'Адаптивная и кросс-браузерная верстка'
+        },
+        {
+          id: 2,
+          name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript'
+        },
+        {
+          id: 3,
+          name: 'Исправление багов'
+        },
+        {
+          id: 4,
+          name: 'Поддержка и развитие текущей архитектуры на основе компонентов'
+        },
+        {
+          id: 5,
+          name: 'Доработка существующих проектов, повышение их удобства'
+        },
+        {
+          id: 6,
+          name: 'SEO оптимизация'
+        }
+      ],
+      additional: ''
+    }
   },
   {
     name: 'Garbuzzov',
@@ -177,6 +274,38 @@ export const projects = [
         icon: 'vue.svg',
         class: 'vue'
       },
-    ]
+    ],
+    popupInfo: {
+      name: 'Сайт визитка garbuzov',
+      link: 'https://gaijin.grey-shop.com',
+      stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      functional: [
+        {
+          id: 1,
+          name: 'Адаптивная и кросс-браузерная верстка'
+        },
+        {
+          id: 2,
+          name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript'
+        },
+        {
+          id: 3,
+          name: 'Исправление багов'
+        },
+        {
+          id: 4,
+          name: 'Поддержка и развитие текущей архитектуры на основе компонентов'
+        },
+        {
+          id: 5,
+          name: 'Доработка существующих проектов, повышение их удобства'
+        },
+        {
+          id: 6,
+          name: 'SEO оптимизация'
+        }
+      ],
+      additional: ''
+    }
   },
 ]

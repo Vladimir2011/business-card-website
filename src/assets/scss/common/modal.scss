@@ -1,10 +1,93 @@
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 555px;
-  background-color: white;
-  z-index: 10000;
+  position: relative;
+  .modal__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $borderAboutSectionColor;
+    border-radius: 8px;
+    width: 60%;
+    height: 555px;
+    background-color: $aboutSectionColor;
+    overflow: scroll;
+    z-index: 10000;
+    padding: 32px;
+
+    .modal__header {
+      font-size: $h4FontSize;
+      line-height: $mainLineHeight;
+      color: $light-color;
+      padding-right: 52px;
+      margin-bottom: 20px;
+    }
+
+    .modal__link-wrapper {
+      margin-bottom: 24px;
+      .modal__link {
+        margin-left: 12px;
+        color: $warning-color;
+      }
+    }
+
+    .modal__tab {
+      margin-bottom: 20px;
+      .modal__tab-header-wrapper {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .modal__tab-name {
+          margin: 0 0 0 18px;
+          color: $primary-color;
+        }
+
+        .modal__tab-icon {
+          transform: rotate(270deg);
+        }
+
+        .modal__tab-name--active {
+          color: $g-0;
+        }
+
+        .modal__tab-icon--active {
+          transform: rotate(0);
+        }
+      }
+
+      .modal__tab-description-block {
+        margin-left: 28px;
+        padding: 15px 20px;
+        background-color: $black-color;
+        border: 1px solid $primary-color;
+        border-radius: 8px;
+        .modal__tab-description-paragraph {
+          color: $light-color;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 100%;
+    }
+    &::-webkit-scrollbar-track {
+      background: $aboutSectionColor;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $black-color;
+      border-radius: 8px;
+    }
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 29px;
+    right: 29px;
+    width: auto;
+    height: auto;
+    content: '';
+    cursor: pointer;
+  }
 }

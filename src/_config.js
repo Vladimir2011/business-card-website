@@ -305,7 +305,10 @@ export const projects = [
           name: 'SEO оптимизация'
         }
       ],
-      additional: ''
+      additional: {
+        name: 'Планы на будущее',
+        info: 'Написать бекенд на Node.js + MongoDB. Произвести миграцию на Nuxt.js + Vuex. Переписать все на TypeScript. Создать админку на Vuetify для более удобного изменения и добавления контента на сайт.'
+      }
     }
   },
 ]

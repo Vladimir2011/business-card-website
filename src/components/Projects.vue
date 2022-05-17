@@ -51,15 +51,16 @@
               </div>
             </div>
           </div>
-
-          <Modal
-            v-if="popupIsOpen"
-            :project="projectPopup"
-          />
         </li>
       </ul>
     </div>
   </section>
+
+  <Modal
+    :is-open="popupIsOpen"
+    :project="projectPopup"
+    @close-popup="closePopup"
+  />
 </template>
 
 <script>
@@ -78,7 +79,7 @@ export default {
 
     // Проверяем по кнопке какого проекта мы нажали
     const openPopup = (event) => {
-      popupIsOpen.value = !popupIsOpen.value
+      popupIsOpen.value = true
 
       projectsList.forEach((item) => {
         if (item.id === +event.target.id) {
@@ -87,11 +88,16 @@ export default {
       })
     }
 
+    const closePopup = () => {
+      popupIsOpen.value = false
+    }
+
     return {
       projectsList,
       popupIsOpen,
       projectPopup,
-      openPopup
+      openPopup,
+      closePopup
     }
   }
 }

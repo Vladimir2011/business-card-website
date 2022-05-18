@@ -67,18 +67,6 @@
         }
       }
     }
-
-    &::-webkit-scrollbar {
-      width: 8px;
-      height: 100%;
-    }
-    &::-webkit-scrollbar-track {
-      background: $aboutSectionColor;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: $black-color;
-      border-radius: 8px;
-    }
   }
 
   .modal__close {

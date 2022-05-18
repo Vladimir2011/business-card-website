@@ -14,11 +14,17 @@
       padding: 18px 18px 18px 0;
       font-size: $subTitleFontSize;
       line-height: $mainLineHeight;
+      .header__close {
+        display: none;
+      }
     }
 
     .header__nav {
       flex: 1 1 0;
     }
+  }
+  .header__container--adaptive {
+    display: none;
   }
 }
 
@@ -61,11 +67,92 @@
 @media screen and (max-width: $desktopWidth) {
   .header {
     .header__container {
-      position: relative;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      padding: 20px 32px 32px 32px;
+      top: 0;
+      z-index: 10000;
+      background-color: $default-color;
+      border: none;
+      transform: translateX(-100%);
+      transition: transform .150s linear;
+      .header__logo-text {
+        width: 100%;
+        display: flex;
+        height: 65px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 10px 0;
+        .header__close {
+          display: flex;
+          cursor: pointer;
+          height: 100%;
+          padding-left: 20px;
+        }
+      }
+
+      .header__nav {
+        flex: 0;
+        width: 100%;
+        .nav__list {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 100%;
+          .nav__item {
+            width: 100%;
+            border-bottom: 1px solid #1E2D3D;
+            .nav__link {
+              border-left: none;
+              text-align: left;
+              padding: 16px 0;
+              max-width: none;
+            }
+          }
+        }
+      }
+
+      .localization {
+        align-self: flex-start;
+        border: none;
+        padding: 0;
+        .localization__button {
+          padding: 32px 6px 6px 6px;
+        }
+      }
     }
 
-    .localization {
-      display: none;
+    .header__container--open {
+      transform: translateX(0);
+      transition: transform .150s linear;
+    }
+
+    .header__container--adaptive {
+      padding: 0 32px;
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+      flex-direction: row;
+      position: relative;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #1E2D3D;
+      transform: translateX(0);
+      .header__burger-button {
+        background: url("./../../static/svg/burger-icon.svg") no-repeat right transparent;
+        height: 59px;
+        width: 70px;
+        padding: 0;
+      }
+      .header__logo-text {
+        width: auto;
+        justify-content: space-between;
+        padding: 18px 18px 18px 0;
+      }
     }
   }
 }

@@ -29,6 +29,7 @@
             v-for="link in linksList"
             :key="link.alias"
             class="nav__item"
+            @click="isMenuOpen = false"
           >
             <a class="nav__link" :href="'#' + link.alias">{{ link.title }}</a>
           </li>
@@ -53,7 +54,7 @@ export default {
   },
   setup () {
     const linksList = ref(links)
-    const isMenuOpen = ref(true)
+    const isMenuOpen = ref(false)
 
     return {
       linksList,

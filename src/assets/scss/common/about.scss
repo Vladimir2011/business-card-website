@@ -65,7 +65,7 @@
           line-height: 1.4;
           width: fit-content;
           .about__numbers-item {
-            color: $light-color;
+            color: $grey-color;
           }
         }
 
@@ -92,7 +92,7 @@
           .about__main-text {
             line-height: 1.5;
             padding-bottom: 26px;
-            color: $g-0;
+            color: $grey-color;
           }
         }
 
@@ -117,7 +117,7 @@
               .about__skills-name {
                 font-size: $subTitleFontSize;
                 line-height: $mainLineHeight;
-                color: $light-color;
+                color: $grey-color;
               }
             }
 

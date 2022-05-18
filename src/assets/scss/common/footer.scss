@@ -8,3 +8,9 @@
     }
   }
 }
+
+@media screen and (max-width: $tableWidth) {
+  .footer {
+    padding: 30px 0;
+  }
+}

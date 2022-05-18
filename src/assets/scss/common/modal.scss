@@ -17,7 +17,7 @@
     .modal__header {
       font-size: $h4FontSize;
       line-height: $mainLineHeight;
-      color: $light-color;
+      color: $grey-color;
       padding-right: 52px;
       margin-bottom: 20px;
     }
@@ -47,7 +47,7 @@
         }
 
         .modal__tab-name--active {
-          color: $g-0;
+          color: $grey-color;
         }
 
         .modal__tab-icon--active {
@@ -62,7 +62,7 @@
         border: 1px solid $primary-color;
         border-radius: 8px;
         .modal__tab-description-paragraph {
-          color: $light-color;
+          color: $grey-color;
           line-height: 1.5;
         }
       }

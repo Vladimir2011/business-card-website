@@ -35,6 +35,7 @@
       height: inherit;
       width: 100%;
       object-fit: cover;
+      object-position: left;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
     }
@@ -82,10 +83,10 @@
 
   .project__description-wrapper {
     padding: 24px;
-
-    .project__description {
-      padding-bottom: 24px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
 
     .project__button-wrapper {
       display: flex;
@@ -106,3 +107,17 @@
   }
 }
 
+@media screen and (max-width: $desktopWidth) {
+  .project {
+    .project__header-wrapper {
+      padding-bottom: 12px;
+      .project__name {
+        width: 100%;
+      }
+    }
+    .project__description-wrapper {
+      font-size: $subTitleFontSize;
+      padding: 16px;
+    }
+  }
+}

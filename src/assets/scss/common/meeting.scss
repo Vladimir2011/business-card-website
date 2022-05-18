@@ -71,7 +71,7 @@
         width: 50%;
         height: 50%;
         background: #222C7C;
-        opacity: 0.4;
+        opacity: 1;
         filter: blur(174px);
         transform: matrix(0.97, 0.23, -0.23, 0.97, 0, 0);
         z-index: -1;
@@ -85,10 +85,34 @@
         width: 60%;
         height: 50%;
         background: #178464;
-        opacity: 0.4;
+        opacity: 1;
         filter: blur(174px);
         transform: matrix(-0.08, -1, 1, -0.08, 0, 0);
         z-index: -1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .meeting {
+    min-height: auto;
+    padding-bottom: 40px;
+    .meeting__container {
+      .meeting__info-block {
+        .meeting__paragraph {
+          font-size: $subTitleFontSize;
+        }
+        .meeting__header {
+          font-size: $h3FontSize;
+        }
+        .meeting__profession-name {
+          font-size: $h4FontSize;
+        }
+
+        .meeting__comments-list {
+          margin: 32px 0;
+        }
       }
     }
   }

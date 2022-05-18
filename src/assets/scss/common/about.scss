@@ -1,7 +1,7 @@
 .about {
   padding-bottom: 100px;
   .about__container {
-    min-height: 641px;
+    min-height: 730px;
     background-color: $aboutSectionColor;
     border: 1px solid $borderAboutSectionColor;
     border-radius: 8px;
@@ -238,6 +238,39 @@
 
       .about__text-container--skills {
         padding: 20px 73px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .about {
+    padding-bottom: 64px;
+    .about__container {
+      min-height: 720px;
+
+      .about__categories-wrapper {
+        .about__categories-header-wrapper {
+          .about__categories-header {
+            font-size: $subTitleFontSize;
+          }
+        }
+      }
+      .about__text-wrapper {
+        .about__text-container {
+          .about__skills-list {
+            flex-direction: column;
+            flex-wrap: inherit;
+            align-items: inherit;
+            .about__skills-item {
+              margin: 0 0 20px 0;
+            }
+          }
+        }
+
+        .about__text-container--skills {
+          padding: 20px;
+        }
       }
     }
   }

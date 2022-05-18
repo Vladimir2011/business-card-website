@@ -6,8 +6,7 @@
     .features__item {
       display: flex;
       flex-direction: column;
-      padding-right: 48px;
-      width: 274px;
+      width: calc(25% - 80px);
       .features__item-title {
         color: $primary-color;
         font-size: $h3FontSize;
@@ -16,6 +15,28 @@
       }
       &:last-child {
         padding-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .features {
+    padding-bottom: 64px;
+    .features__list {
+      .features__item {
+        width: calc(25% - 16px);
+        .features__item-title {
+          font-size: $h4FontSize;
+          margin-bottom: 16px;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+
+        .features__item-paragraph {
+          font-size: $subTitleFontSize;
+        }
       }
     }
   }

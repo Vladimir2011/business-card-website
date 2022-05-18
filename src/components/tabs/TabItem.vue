@@ -2,7 +2,7 @@
   <div class="about__text-container">
     <ul class="about__numbers-list">
       <li
-          v-for="i in 21"
+          v-for="i in 24"
           :key="i"
           class="about__numbers-item"
       >

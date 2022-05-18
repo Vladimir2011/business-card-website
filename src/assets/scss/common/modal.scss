@@ -91,3 +91,12 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: $desktopWidth) {
+  .modal {
+    .modal__content {
+      width: 90%;
+      padding: 24px;
+    }
+  }
+}

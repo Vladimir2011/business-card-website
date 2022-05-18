@@ -17,6 +17,10 @@
         <button class="localization__button localization__button-active">RU</button>
         <button class="localization__button">ENG</button>
       </div>
+
+      <!--Mobile menu-->
+
+      <!--Mobile menu end-->
     </div>
   </header>
 </template>

@@ -87,8 +87,8 @@ export default {
     }
 
     let stackIsOpen = ref(true)
-    let functIsOpen = ref(false)
-    let additIsOpen = ref(false)
+    let functIsOpen = ref(true)
+    let additIsOpen = ref(true)
 
     // Позже произвести рефакторинг этого участка кода
     const openStack = () => {

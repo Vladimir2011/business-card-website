@@ -46,7 +46,7 @@
 <script>
 import Button from '@/components/Button'
 import { links } from '@/_config'
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 export default {
   components: {
@@ -55,6 +55,16 @@ export default {
   setup () {
     const linksList = ref(links)
     const isMenuOpen = ref(false)
+
+    watch(isMenuOpen, (value) => {
+      if (value) {
+        document.body.style.overflow = 'hidden'
+        document.body.style.position = 'relative'
+      } else {
+        document.body.style.overflow = 'auto'
+        document.body.style.position = 'static'
+      }
+    })
 
     return {
       linksList,

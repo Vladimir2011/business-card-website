@@ -7,8 +7,7 @@
     emits: ['buttonClick'],
     props: {
       name: {
-        type: String,
-        required: true
+        type: String
       },
       className: {
         type: String

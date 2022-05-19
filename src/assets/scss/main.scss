@@ -102,6 +102,13 @@ li {
   z-index: 100;
 }
 
+.adaptive {
+  display: block;
+  @media screen and (max-width: $tableWidth) {
+    display: none;
+  }
+}
+
 @import './common/_common';
 @import './helpers/_helpers';
 @import './utils/fonts';

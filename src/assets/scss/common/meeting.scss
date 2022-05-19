@@ -117,3 +117,44 @@
     }
   }
 }
+
+@media screen and (max-width: $tableWidth) {
+  .meeting {
+    .meeting__container {
+      flex-wrap: wrap;
+      .meeting__info-block {
+        width: 100%;
+        .meeting__paragraph {
+          font-size: $bodyFontSize;
+        }
+        .meeting__header {
+          font-size: $h1FontSize;
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+        .meeting__profession-name {
+          font-size: 20px;
+        }
+      }
+
+      .meeting__image-container {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smPhoneWidth) {
+  .meeting {
+    .meeting__container {
+      .meeting__info-block {
+        .meeting__comments-list {
+          .meeting__comments-item {
+            font-size: $buttonFontSize;
+          }
+        }
+      }
+    }
+  }
+}

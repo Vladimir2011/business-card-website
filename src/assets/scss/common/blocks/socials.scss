@@ -36,3 +36,14 @@
   }
 }
 
+@media screen and (max-width: $smPhoneWidth) {
+  .socials {
+    .socials__list {
+      .socials__item {
+        .socials__link {
+          font-size: $buttonFontSize;
+        }
+      }
+    }
+  }
+}

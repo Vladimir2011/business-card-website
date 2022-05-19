@@ -9,21 +9,19 @@
           </p>
         </div>
         <ul class="about__categories-list">
-          <li
+          <CategoryItem
               v-for="(category, index) in tabs"
               :key="category.id"
-              class="about__categories-item"
-              @click="selectTab(index)"
-              :class="{'about__categories-item-active' : (index === selectedIndex)}"
-          >
-            <img class="about__categories-item-icon about__categories-item-icon--arrow" src="@/static/svg/category-arrow.svg" alt="icon">
-            <img class="about__categories-item-icon" :src="require('@/static/svg/' + category.icon)" alt="icon">
-            {{ category.name }}
-          </li>
+              @select-tab="selectTab(index)"
+              :name="category.name"
+              :icon="category.icon"
+              :class-item="{'about__categories-item-active' : (index === selectedIndex)}"
+              :class-icon="{'about__categories-item-icon-active' : (index === selectedIndex)}"
+          />
         </ul>
       </div>
 
-      <div class="about__text-wrapper">
+      <div class="about__text-wrapper adaptive">
         <div class="about__text-header"/>
 
         <TabItem v-show="selectedIndex === 0">
@@ -98,12 +96,14 @@
 
 <script>
 import TabItem from '@/components/tabs/TabItem'
+import CategoryItem from '@/components/categories/CategoryItem'
 import { categories, skills } from '@/_config'
 import { ref } from 'vue'
 
 export default {
   components: {
-    TabItem
+    TabItem,
+    CategoryItem
   },
   setup () {
     let tabs = categories

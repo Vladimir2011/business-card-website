@@ -36,12 +36,11 @@
 
           display: flex;
           align-items: center;
-          .about__categories-item-icon {
-            padding-right: 11px;
+
+          .about__categories-item-icon--folder {
+            padding: 0 11px 0 16px;
           }
-          .about__categories-item-icon--arrow {
-            padding-right: 16px;
-          }
+
         }
         .about__categories-item-active {
           background: $black-color;
@@ -270,6 +269,29 @@
 
         .about__text-container--skills {
           padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .about {
+    .about__container {
+      height: auto;
+      min-height: auto;
+      .about__categories-wrapper {
+        width: 100%;
+        max-width: none;
+        border-right: none;
+
+        .about__categories-list {
+          margin-top: 20px;
+          .about__categories-item {
+            .about__categories-item-icon-active {
+              transform: rotate(90deg);
+            }
+          }
         }
       }
     }

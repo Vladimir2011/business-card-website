@@ -87,6 +87,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 180px;
+    border-top: 1px solid $borderAboutSectionColor;
 
     .project__button-wrapper {
       display: flex;

@@ -41,3 +41,18 @@
     }
   }
 }
+
+@media screen and (max-width: $tableWidth) {
+  .features {
+    .features__list {
+      flex-direction: column;
+      .features__item {
+        width: 100%;
+        margin-bottom: 32px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

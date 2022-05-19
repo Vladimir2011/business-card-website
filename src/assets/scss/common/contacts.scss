@@ -25,7 +25,8 @@
       .contacts__info-wrapper {
         width: calc(50% - 16px);
         .contacts__header {
-          margin-bottom: 24px;
+          padding-bottom: 24px;
+          margin: 0;
         }
         .contacts__paragraph {
           margin-bottom: 24px;

@@ -119,6 +119,16 @@
     .project__description-wrapper {
       font-size: $subTitleFontSize;
       padding: 16px;
+      .project__button-wrapper {
+        .project__button {
+          &:hover {
+            background-color: $projectButtonBackground;
+          }
+          &:active {
+            background-color: $projectButtonBackground;
+          }
+        }
+      }
     }
   }
 }

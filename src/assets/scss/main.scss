@@ -85,6 +85,8 @@ li {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .main {
@@ -108,6 +110,25 @@ li {
     display: none;
   }
 }
+
+.desktop {
+  display: none;
+  @media screen and (max-width: $tableWidth) {
+    display: block;
+  }
+}
+
+// Анимации
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: .5s;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: .5s;
+}
+
+
 
 @import './common/_common';
 @import './helpers/_helpers';

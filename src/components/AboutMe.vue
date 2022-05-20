@@ -15,6 +15,8 @@
               @select-tab="selectTab(index)"
               :name="category.name"
               :icon="category.icon"
+              :index="index"
+              :selected-index="selectedIndex"
               :class-item="{'about__categories-item-active' : (index === selectedIndex)}"
               :class-icon="{'about__categories-item-icon-active' : (index === selectedIndex)}"
           />
@@ -26,26 +28,30 @@
 
         <TabItem v-show="selectedIndex === 0">
           <div class="about__main-text-container">
-            <p class="about__main-text-header">&lt;/About me&gt;</p>
-            <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius excepturi natus necessitatibus omnis praesentium repellat suscipit. Assumenda deleniti hic iste itaque nesciunt non officiis quod ratione recusandae reiciendis! Ducimus earum excepturi, magni nisi quam quas. Atque dicta ipsam magnam minima molestias nemo nulla quibusdam suscipit temporibus ut. Impedit, odit!</p>
-            <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum illum perferendis similique voluptatibus. Aliquid aut blanditiis deserunt sapiente totam.</p>
+            <p class="about__main-text-header animate__animated animate__fadeInLeft">&lt;/About me&gt;</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius excepturi natus necessitatibus omnis praesentium repellat suscipit. Assumenda deleniti hic iste itaque nesciunt non officiis quod ratione recusandae reiciendis! Ducimus earum excepturi, magni nisi quam quas. Atque dicta ipsam magnam minima molestias nemo nulla quibusdam suscipit temporibus ut. Impedit, odit!</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum illum perferendis similique voluptatibus. Aliquid aut blanditiis deserunt sapiente totam.</p>
           </div>
         </TabItem>
 
         <TabItem v-show="selectedIndex === 1">
           <div class="about__main-text-container">
-            <p class="about__main-text-header about__main-text-header--job">&lt;/Work experience&gt;</p>
+            <p class="about__main-text-header about__main-text-header-job animate__animated animate__fadeInLeft">&lt;/Work experience&gt;</p>
 
-            <p class="about__main-text--job">Frontend-разрабочик в ООО “Грей-Шоп”</p>
-            <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
-            <p class="about__main-text--job">Веб-разработчик (фриланс, пет-проекты)</p>
-            <p class="about__main-text">Апрель 2020 - Май 2021 (1 год 2 месяца)</p>
+            <div class="animate__animated animate__fadeInDown animate__delay-1s">
+              <p class="about__main-text-job">Frontend-разрабочик в ООО “Грей-Шоп”</p>
+              <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
+            </div>
+
+            <div class="animate__animated animate__fadeInDown animate__delay-2s">
+              <p class="about__main-text-job">Веб-разработчик (фриланс, пет-проекты)</p>
+              <p class="about__main-text">Апрель 2020 - Май 2021 (1 год 2 месяца)</p>
+            </div>
           </div>
         </TabItem>
 
-        <!--3ий таб-->
-        <div v-show="selectedIndex === 2" class="about__text-container about__text-container--skills">
-          <ul class="about__skills-list">
+        <TabItem :skills-block="true" v-show="selectedIndex === 2">
+          <ul class="about__skills-list about__text-container--skills">
             <li
               v-for="skill in skillsList"
               :key="skill.id"
@@ -60,33 +66,37 @@
               </div>
             </li>
           </ul>
-        </div>
+        </TabItem>
 
         <TabItem v-show="selectedIndex === 3">
           <div class="about__main-text-container">
-            <p class="about__main-text-header about__main-text-header--education">&lt;/Education&gt;</p>
+            <div class="animate__animated animate__fadeInLeft">
+              <p class="about__main-text-header about__main-text-header-education">&lt;/Education&gt;</p>
 
-            <p class="about__main-text--job">Московский государственный строительный университет (2018 год)</p>
-            <p class="about__main-text">Экономика, Экономика и управление на предприятии (Бакалавр)</p>
+              <p class="about__main-text-job">Московский государственный строительный университет (2018 год)</p>
+              <p class="about__main-text">Экономика, Экономика и управление на предприятии (Бакалавр)</p>
+            </div>
 
-            <p class="about__main-text-header about__main-text-header--education">&lt;/Courses&gt;</p>
+            <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+              <p class="about__main-text-header about__main-text-header-education">&lt;/Courses&gt;</p>
 
-            <p class="about__main-text--job">Курс Vue.js 3 + Nuxt.js 3 (2022 год)</p>
-            <p class="about__main-text">Youtube</p>
-            <p class="about__main-text--job">Курс Vue.js (2021 год)</p>
-            <p class="about__main-text">Владилен Минин</p>
-            <p class="about__main-text--job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
-            <p class="about__main-text">Яндекс</p>
-            <p class="about__main-text--job">Интенсив по верстке (2 уровня) (2019 год)</p>
-            <p class="about__main-text">HTML Academy</p>
+              <p class="about__main-text-job">Курс Vue.js 3 + Nuxt.js 3 (2022 год)</p>
+              <p class="about__main-text">Youtube</p>
+              <p class="about__main-text-job">Курс Vue.js (2021 год)</p>
+              <p class="about__main-text">Владилен Минин</p>
+              <p class="about__main-text-job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
+              <p class="about__main-text">Яндекс</p>
+              <p class="about__main-text-job">Интенсив по верстке (2 уровня) (2019 год)</p>
+              <p class="about__main-text">HTML Academy</p>
+            </div>
           </div>
         </TabItem>
 
         <TabItem v-show="selectedIndex === 4">
           <div class="about__main-text-container">
-            <p class="about__main-text-header about__main-text-header--job">&lt;/Interests></p>
+            <p class="about__main-text-header about__main-text-header-job animate__animated animate__fadeInLeft">&lt;/Interests></p>
 
-            <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">Июнь 2021 - по настоящее время (1 год)</p>
           </div>
         </TabItem>
       </div>

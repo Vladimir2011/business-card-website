@@ -88,3 +88,17 @@
     }
   }
 }
+
+@media screen and (max-width: $tableWidth) {
+  .modal {
+    .modal__content {
+      width: 100%;
+      padding: 16px;
+      .modal__tab {
+        .modal__tab-description-block {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}

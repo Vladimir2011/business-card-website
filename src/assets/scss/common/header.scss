@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
 
-    border: 1px solid #1E2D3D;
+    border-bottom: 1px solid #1E2D3D;
 
     .header__logo-text {
       display: block;
@@ -31,7 +31,7 @@
 .localization {
   padding: 18px 0 18px 32px;
   border-left: 1px solid #1E2D3D;
-  display: block;
+  display: none;
   .localization__button {
     outline: none;
     background: transparent;
@@ -68,7 +68,6 @@
   .header {
     .header__container {
       position: absolute;
-      display: none;
       flex-direction: column;
       width: 100%;
       height: 100vh;
@@ -77,8 +76,8 @@
       z-index: 10000;
       background-color: $default-color;
       border: none;
-      transform: translateX(100%);
-      transition: transform .5s ease-in-out;
+      right: -100%;
+      transition: right .4s ease-in-out;
       .header__logo-text {
         width: 100%;
         display: flex;
@@ -120,14 +119,17 @@
         padding: 0;
         .localization__button {
           padding: 32px 6px 6px 6px;
+          &:hover {
+            color: $mainFontColor;
+          }
         }
       }
     }
 
     .header__container--open {
       display: flex;
-      transform: translateX(0);
-      transition: transform .5s ease-in-out;
+      right: 0;
+      transition: right .4s ease-in-out;
     }
 
     .header__container--adaptive {
@@ -139,9 +141,9 @@
       position: relative;
       align-items: center;
       background-color: transparent;
-      border: none;
       border-bottom: 1px solid #1E2D3D;
       transform: translateX(0);
+      right: 0;
       .header__burger-button {
         background: url("./../../static/svg/burger-icon.svg") no-repeat right transparent;
         height: 59px;

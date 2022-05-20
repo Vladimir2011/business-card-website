@@ -8,7 +8,7 @@
         display: block;
         padding: 18px 32px;
         text-align: center;
-        border-left: 1px solid #1E2D3D;
+        border-right: 1px solid #1E2D3D;
         font-size: $subTitleFontSize;
         line-height: $mainLineHeight;
         max-width: 150px;
@@ -19,10 +19,29 @@
           color: $primary-color;
         }
       }
+      &:last-child {
+        .nav__link {
+          border-right: none;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: $desktopWidth) {
-
+  .nav {
+    .nav__list {
+      .nav__item {
+        .nav__link {
+          border-right: none;
+          &:hover {
+            color: $mainFontColor;
+          }
+          &:active {
+            color: $mainFontColor;
+          }
+        }
+      }
+    }
+  }
 }

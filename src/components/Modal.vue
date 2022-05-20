@@ -6,7 +6,22 @@
 
         <div class="modal__link-wrapper">
           <img src="@/static/svg/link-icon-popup.svg" alt="icon" class="modal__link-icon">
-          <a href="https://gaijin.grey-shop.com" target="_blank" class="modal__link">https://gaijin.grey-shop.com</a>
+          <a :href="project.link" target="_blank" class="modal__link">{{ project.link }}</a>
+        </div>
+
+        <div v-if="project.details" class="modal__tab">
+          <div class="modal__tab-header-wrapper" @click="openDetails">
+            <img
+                src="@/static/svg/arrow-icon-popup.svg"
+                alt="icon"
+                class="modal__tab-icon"
+                :class="{'modal__tab-icon--active' : detailsIsOpen}"
+            >
+            <span class="modal__tab-name" :class="{'modal__tab-name--active' : detailsIsOpen}">Подробнее о проекте</span>
+          </div>
+          <div class="modal__tab-description-block" v-if="detailsIsOpen">
+            <p class="modal__tab-description-paragraph">{{ project.details }}</p>
+          </div>
         </div>
 
         <div class="modal__tab">
@@ -89,8 +104,13 @@ export default {
     let stackIsOpen = ref(true)
     let functIsOpen = ref(true)
     let additIsOpen = ref(true)
+    let detailsIsOpen = ref(true)
 
     // Позже произвести рефакторинг этого участка кода
+    const openDetails = () => {
+      detailsIsOpen.value = !detailsIsOpen.value
+    }
+
     const openStack = () => {
       stackIsOpen.value = !stackIsOpen.value
     }
@@ -108,9 +128,11 @@ export default {
       stackIsOpen,
       functIsOpen,
       additIsOpen,
+      detailsIsOpen,
       openStack,
       openFunct,
-      openAddit
+      openAddit,
+      openDetails
     }
   }
 }

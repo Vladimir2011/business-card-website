@@ -106,6 +106,18 @@ export const skills = [
     class: 'webpack',
     id: 10
   },
+  {
+    name: 'Node-js',
+    icon: 'node-js-icon.svg',
+    class: 'node-js',
+    id: 11
+  },
+  {
+    name: 'English',
+    icon: 'english-icon.svg',
+    class: 'english',
+    id: 12
+  },
 ]
 
 export const projects = [
@@ -132,6 +144,7 @@ export const projects = [
       name: 'Сайт магазина официального мерча Gaijin Entertainment \n' +
         'для игр Enlsited и Warthunder',
       link: 'https://gaijin.grey-shop.com',
+      details: '',
       stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
       functional: [
         {
@@ -183,8 +196,9 @@ export const projects = [
     ],
     popupInfo: {
       name: 'Официальный магазин игры Escape From Tarkov',
-      link: 'https://gaijin.grey-shop.com',
+      link: 'https://tarkovmerchstore.com/',
       stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      details: '',
       functional: [
         {
           id: 1,
@@ -230,8 +244,9 @@ export const projects = [
     ],
     popupInfo: {
       name: 'Сайт школы английского языка для детей CleverBaby',
-      link: 'https://gaijin.grey-shop.com',
+      link: 'https://vladimir2011.github.io/CleverBaby/',
       stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      details: '',
       functional: [
         {
           id: 1,
@@ -279,6 +294,7 @@ export const projects = [
       name: 'Сайт визитка garbuzov',
       link: 'https://gaijin.grey-shop.com',
       stack: 'Vue.js (v.2), Nuxt.js (v.2), Vuex, Typescript/Javascript, HTML5/CSS3, SCSS, Webpack.',
+      details: '',
       functional: [
         {
           id: 1,

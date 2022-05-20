@@ -76,8 +76,7 @@
       z-index: 10000;
       background-color: $default-color;
       border: none;
-      right: -100%;
-      transition: right .4s ease-in-out;
+      transform: translateX(-100%);
       .header__logo-text {
         width: 100%;
         display: flex;
@@ -128,8 +127,7 @@
 
     .header__container--open {
       display: flex;
-      right: 0;
-      transition: right .4s ease-in-out;
+      transform: translateX(0);
     }
 
     .header__container--adaptive {
@@ -143,7 +141,6 @@
       background-color: transparent;
       border-bottom: 1px solid #1E2D3D;
       transform: translateX(0);
-      right: 0;
       .header__burger-button {
         background: url("./../../static/svg/burger-icon.svg") no-repeat right transparent;
         height: 59px;

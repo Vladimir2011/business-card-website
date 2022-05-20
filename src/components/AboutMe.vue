@@ -10,15 +10,15 @@
         </div>
         <ul class="about__categories-list">
           <CategoryItem
-              v-for="(category, index) in tabs"
-              :key="category.id"
-              @select-tab="selectTab(index)"
-              :name="category.name"
-              :icon="category.icon"
-              :index="index"
-              :selected-index="selectedIndex"
-              :class-item="{'about__categories-item-active' : (index === selectedIndex)}"
-              :class-icon="{'about__categories-item-icon-active' : (index === selectedIndex)}"
+            v-for="(category, index) in tabs"
+            :key="category.id"
+            @select-tab="selectTab(index)"
+            :name="category.name"
+            :icon="category.icon"
+            :index="index"
+            :selected-index="selectedIndex"
+            :class-item="{'about__categories-item-active' : (index === selectedIndex)}"
+            :class-icon="{'about__categories-item-icon-active' : (index === selectedIndex)}"
           />
         </ul>
       </div>

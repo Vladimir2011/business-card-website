@@ -1,14 +1,14 @@
 <template>
   <li
-      class="about__categories-item"
-      @click="selectTab"
-      :class="classItem"
+    class="about__categories-item"
+    @click.prevent="selectTab"
+    :class="classItem"
   >
     <img
-        class="about__categories-item-icon about__categories-item-icon--arrow"
-        :class="classIcon"
-        src="@/static/svg/category-arrow.svg"
-        alt="icon"
+      class="about__categories-item-icon about__categories-item-icon--arrow"
+      :class="classIcon"
+      src="@/static/svg/category-arrow.svg"
+      alt="icon"
     >
     <img class="about__categories-item-icon about__categories-item-icon--folder" :src="require('@/static/svg/' + icon)" alt="icon">
     {{ name }}
@@ -19,7 +19,7 @@
 
     <TabItem>
       <!--1ый таб-->
-      <div  v-if="selectedIndex === 0 && index === 0" class="about__main-text-container animate__animated animate__slideInDown">
+      <div v-if="selectedIndex === 0 && index === 0" class="about__main-text-container animate__animated animate__slideInDown">
         <p class="about__main-text-header">&lt;/About me&gt;</p>
         <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius excepturi natus necessitatibus omnis praesentium repellat suscipit. Assumenda deleniti hic iste itaque nesciunt non officiis quod ratione recusandae reiciendis! Ducimus earum excepturi, magni nisi quam quas. Atque dicta ipsam magnam minima molestias nemo nulla quibusdam suscipit temporibus ut. Impedit, odit!</p>
         <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum illum perferendis similique voluptatibus. Aliquid aut blanditiis deserunt sapiente totam.</p>

@@ -29,8 +29,17 @@
         <TabItem v-show="selectedIndex === 0">
           <div class="about__main-text-container">
             <p class="about__main-text-header animate__animated animate__fadeInLeft">&lt;/About me&gt;</p>
-            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius excepturi natus necessitatibus omnis praesentium repellat suscipit. Assumenda deleniti hic iste itaque nesciunt non officiis quod ratione recusandae reiciendis! Ducimus earum excepturi, magni nisi quam quas. Atque dicta ipsam magnam minima molestias nemo nulla quibusdam suscipit temporibus ut. Impedit, odit!</p>
-            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum illum perferendis similique voluptatibus. Aliquid aut blanditiis deserunt sapiente totam.</p>
+
+
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">
+              Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2ух лет.
+              Умею и люблю разрабатывать интерфейсы различного уровня сложности. Постоянно практикуюсь и прокачиваю свои навыки.
+            </p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Заинтересован в создании проектов, которыми мог бы гордиться.
+              Поэтому мне хочется делать качественный и удобный продукт, разработанный в первую очередь для людей.
+              Кроме того, считаю, что продукт должен быть хорош не только снаружи, но и изнутри – ведь только тогда он будет по-настоящему отличным.
+              Чтобы всего этого достичь, я стараюсь быть инициативным, внимательным к деталям, помогать в работе другим членам команды и поддерживать дружественные отношения.
+            </p>
           </div>
         </TabItem>
 
@@ -96,7 +105,9 @@
           <div class="about__main-text-container">
             <p class="about__main-text-header about__main-text-header-job animate__animated animate__fadeInLeft">&lt;/Interests></p>
 
-            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">Июнь 2021 - по настоящее время (1 год)</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">Люблю спорт. В основном это плаванье, бег и тренажерный зал.</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Активно изучаю английский язык. Стараюсь практиковать свою разговорну</p>
+            <p class="about__main-text animate__animated animate__fadeInDown animate__delay-3s">Июнь 2021 - по настоящее время (1 год)</p>
           </div>
         </TabItem>
       </div>

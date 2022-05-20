@@ -21,8 +21,15 @@
       <!--1ый таб-->
       <div v-if="selectedIndex === 0 && index === 0" class="about__main-text-container animate__animated animate__slideInDown">
         <p class="about__main-text-header">&lt;/About me&gt;</p>
-        <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius excepturi natus necessitatibus omnis praesentium repellat suscipit. Assumenda deleniti hic iste itaque nesciunt non officiis quod ratione recusandae reiciendis! Ducimus earum excepturi, magni nisi quam quas. Atque dicta ipsam magnam minima molestias nemo nulla quibusdam suscipit temporibus ut. Impedit, odit!</p>
-        <p class="about__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum illum perferendis similique voluptatibus. Aliquid aut blanditiis deserunt sapiente totam.</p>
+        <p class="about__main-text">
+          Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2ух лет, имею больше года коммерческого опыта.
+          Умею и люблю разрабатывать интерфейсы различного уровня сложности. Постоянно практикуюсь и прокачиваю свои навыки.
+        </p>
+        <p class="about__main-text">Заинтересован в создании проектов, которыми мог бы гордиться.
+          Поэтому мне хочется делать качественный и удобный продукт, разработанный в первую очередь для людей.
+          Кроме того, считаю, что продукт должен быть хорош не только снаружи, но и изнутри – ведь только тогда он будет по-настоящему отличным.
+          Чтобы всего этого достичь, я стараюсь быть инициативным, внимательным к деталям, помогать в работе другим членам команды и поддерживать дружественные отношения.
+        </p>
       </div>
       <!--2ой таб-->
       <div v-if="selectedIndex === 1 && index === 1" class="about__main-text-container animate__animated animate__slideInDown">

@@ -47,7 +47,7 @@
               class="modal__tab-icon"
               :class="{'modal__tab-icon--active' : functIsOpen}"
             >
-            <span class="modal__tab-name" :class="{'modal__tab-name--active' : functIsOpen}">Функционал</span>
+            <span class="modal__tab-name" :class="{'modal__tab-name--active' : functIsOpen}">Чем занимался</span>
           </div>
           <div class="modal__tab-description-block" v-show="functIsOpen">
             <p

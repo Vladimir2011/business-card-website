@@ -28,7 +28,7 @@
           <div v-show="selectedIndex === 0" class="about__main-text-container">
             <p class="about__main-text-header animate__animated animate__fadeInLeft">&lt;/About me&gt;</p>
             <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">
-              Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2ух лет.
+              Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2-х лет.
               Умею и люблю разрабатывать интерфейсы различного уровня сложности. Постоянно практикуюсь и прокачиваю свои навыки.
             </p>
             <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Заинтересован в создании проектов, которыми мог бы гордиться.
@@ -123,10 +123,10 @@
           >
             <div class="about__text-wrapper desktop">
               <TabItem>
-                <div v-show="isOpenTabs.firstTabOpen && index === 0" class="about__main-text-container animate__animated animate__slideInDown">
+                <div v-if="isOpenTabs.firstTabOpen && index === 0" class="about__main-text-container animate__animated animate__slideInDown">
                   <p class="about__main-text-header">&lt;/About me&gt;</p>
                   <p class="about__main-text">
-                    Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2ух лет.
+                    Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2-х лет.
                     Умею и люблю разрабатывать интерфейсы различного уровня сложности. Постоянно практикуюсь и прокачиваю свои навыки.
                   </p>
                   <p class="about__main-text">Заинтересован в создании проектов, которыми мог бы гордиться.
@@ -136,7 +136,7 @@
                   </p>
                 </div>
 
-                <div v-show="isOpenTabs.secondTabOpen && index === 1" class="about__main-text-container animate__animated animate__slideInDown">
+                <div v-if="isOpenTabs.secondTabOpen && index === 1" class="about__main-text-container animate__animated animate__slideInDown">
                   <p class="about__main-text-header about__main-text-header-job">&lt;/Work experience&gt;</p>
                     <p class="about__main-text-job">Frontend-разрабочик в ООО “Грей-Шоп”</p>
                     <p class="about__main-text">Июнь 2021 - по настоящее время (1 год)</p>
@@ -145,7 +145,7 @@
                     <p class="about__main-text">Апрель 2020 - Май 2021 (1 год 2 месяца)</p>
                 </div>
 
-                <div v-show="isOpenTabs.fourthTabOpen && index === 3" class="about__main-text-container animate__animated animate__slideInDown">
+                <div v-if="isOpenTabs.fourthTabOpen && index === 3" class="about__main-text-container animate__animated animate__slideInDown">
                     <p class="about__main-text-header about__main-text-header-education">&lt;/Education&gt;</p>
 
                     <p class="about__main-text-job">Московский государственный строительный университет (2018 год)</p>
@@ -163,7 +163,7 @@
                     <p class="about__main-text">HTML Academy</p>
                 </div>
 
-                <div v-show="isOpenTabs.fifthTabOpen && index === 4" class="about__main-text-container animate__animated animate__slideInDown">
+                <div v-if="isOpenTabs.fifthTabOpen && index === 4" class="about__main-text-container animate__animated animate__slideInDown">
                   <p class="about__main-text-header about__main-text-header-job">&lt;/Interests></p>
 
                   <p class="about__main-text">Люблю спорт. В основном это плаванье, бег и тренажерный зал.</p>
@@ -173,7 +173,7 @@
                 </div>
               </TabItem>
 
-              <TabItem :skills-block="true" v-show="isOpenTabs.thirdTabOpen && index === 2">
+              <TabItem :skills-block="true" v-if="isOpenTabs.thirdTabOpen && index === 2">
                 <ul class="about__skills-list about__text-container--skills">
                   <li
                       v-for="skill in skillsList"

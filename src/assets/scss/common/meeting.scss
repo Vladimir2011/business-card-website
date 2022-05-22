@@ -1,6 +1,7 @@
 .meeting {
-  min-height: 650px;
   padding-bottom: 50px;
+  background: url("./../../static/bg-mainpage.jpg") no-repeat 20% 20%;
+  background-size: cover;
   .meeting__container {
     display: flex;
     align-items: center;
@@ -63,33 +64,6 @@
     .meeting__image-container {
       position: relative;
       z-index: 2;
-      &:after {
-        content: '';
-        position: absolute;
-        top: 40%;
-        left: 8%;
-        width: 70%;
-        height: 20%;
-        background: #222C7C;
-        opacity: 1;
-        filter: blur(100px);
-        transform: matrix(0.97, 0.23, -0.23, 0.97, 0, 0);
-        z-index: -1;
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 28%;
-        width: 70%;
-        height: 20%;
-        background: #178464;
-        opacity: 1;
-        filter: blur(100px);
-        transform: matrix(-0.08, -1, 1, -0.08, 0, 0);
-        z-index: -1;
-      }
     }
   }
 }

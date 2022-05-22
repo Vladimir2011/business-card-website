@@ -271,7 +271,7 @@ export const projects = [
     }
   },
   {
-    name: 'Garbuzov',
+    name: 'Garbuzovv',
     type: '_landing-page',
     description: 'Сайт визитка прекрасного человека и разработчика.',
     image: 'garbuzov-project-image.png',
@@ -286,7 +286,7 @@ export const projects = [
     ],
     popupInfo: {
       name: 'Сайт визитка garbuzov',
-      link: 'https://garbuzov.com/',
+      link: 'https://garbuzovv.ru/',
       stack: 'Vue.js (Composition API, Vue CLI, компонентный подход), HTML5/CSS3, SCSS, Webpack.',
       details: 'Сайт был разработан с 0, по уникальном дизайну с использованием Vue 3 и Composition API.',
       functional: [

@@ -63,8 +63,8 @@
             <div class="animate__animated animate__fadeInLeft animate__delay-1s">
               <p class="about__main-text-header about__main-text-header-education">&lt;/Courses&gt;</p>
 
-              <p class="about__main-text-job">Курс Vue.js 3 + Nuxt.js 3 (2022 год)</p>
-              <p class="about__main-text">Youtube</p>
+              <p class="about__main-text-job">Треки по Frontend-разработке на Хекслет (2022 год)</p>
+              <p class="about__main-text">Хекслет</p>
               <p class="about__main-text-job">Курс Vue.js (2021 год)</p>
               <p class="about__main-text">Владилен Минин</p>
               <p class="about__main-text-job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
@@ -153,8 +153,8 @@
 
                     <p class="about__main-text-header about__main-text-header-education">&lt;/Courses&gt;</p>
 
-                    <p class="about__main-text-job">Курс Vue.js 3 + Nuxt.js 3 (2022 год)</p>
-                    <p class="about__main-text">Youtube</p>
+                    <p class="about__main-text-job">Треки по Frontend-разработке на Хекслет (2022 год)</p>
+                    <p class="about__main-text">Хекслет</p>
                     <p class="about__main-text-job">Курс Vue.js (2021 год)</p>
                     <p class="about__main-text">Владилен Минин</p>
                     <p class="about__main-text-job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>

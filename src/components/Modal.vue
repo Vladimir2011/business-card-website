@@ -1,6 +1,5 @@
 <template>
-  <transition>
-    <div class="modal" v-show="isOpen">
+  <div class="modal" v-show="isOpen">
       <div class="modal__content">
         <h4 class="modal__header">{{ project.name }}</h4>
 
@@ -82,7 +81,6 @@
 
       <div class="shadow" @click="handleClose" />
     </div>
-  </transition>
 </template>
 
 <script>
@@ -137,15 +135,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-</style>

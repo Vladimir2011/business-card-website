@@ -56,11 +56,15 @@
     </div>
   </section>
 
-  <Modal
-    :is-open="popupIsOpen"
-    :project="projectPopup"
-    @close-popup="closePopup"
-  />
+  <Teleport to="#modal">
+    <transition name="modal">
+      <Modal
+        :is-open="popupIsOpen"
+        :project="projectPopup"
+        @close-popup="closePopup"
+      />
+    </transition>
+  </Teleport>
 </template>
 
 <script>

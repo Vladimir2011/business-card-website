@@ -82,6 +82,17 @@
   }
 }
 
+// transition для modal
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
 @media screen and (max-width: $desktopWidth) {
   .modal {
     .modal__content {

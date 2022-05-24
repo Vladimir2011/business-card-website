@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (min-width: $fullHdDesktopWidth) {
+  .meeting {
+    background-size: contain;
+  }
+}
+
 @media screen and (max-width: $desktopWidth) {
   .meeting {
     min-height: auto;

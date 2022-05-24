@@ -24,9 +24,11 @@
 
     .modal__link-wrapper {
       margin-bottom: 24px;
+      display: flex;
       .modal__link {
         margin-left: 12px;
         color: $warning-color;
+        word-break: break-all;
       }
     }
 
@@ -78,6 +80,17 @@
     content: '';
     cursor: pointer;
   }
+}
+
+// transition для modal
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
 }
 
 @media screen and (max-width: $desktopWidth) {

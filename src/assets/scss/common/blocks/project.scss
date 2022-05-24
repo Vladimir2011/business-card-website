@@ -77,6 +77,15 @@
         .js {
           background-color: yellow;
         }
+
+        .ts {
+          width: 28px;
+          height: 28px;
+          .project__tech-image {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
   }

@@ -3,7 +3,7 @@
     <!--Mobile menu start-->
     <div class="header__container header__container--adaptive">
       <p class="header__logo-text">
-        Frontend-developer
+        Vladimir Garbuzov
       </p>
       <Button
         :name="''"
@@ -14,7 +14,7 @@
     <!--Mobile menu end-->
     <div class="header__container" :class="{'header__container--open' : isMenuOpen}">
       <p class="header__logo-text">
-        Frontend-developer
+        Vladimir Garbuzov
         <span class="header__close" @click="isMenuOpen = false">
           <img
             src="@/static/svg/close-menu-icon.svg"

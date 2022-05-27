@@ -256,7 +256,7 @@ export const projects = [
       name: 'Сайт школы английского языка для детей CleverBaby',
       link: 'https://vladimir2011.github.io/CleverBaby/',
       stack: 'Javascript, HTML5/CSS3, Webpack.',
-      details: 'Пет-проект, который был написан мной 1,5 года для прокачки скиллов в верстке и нативном JavaScript.',
+      details: 'Пет-проект, который был написан мной 1,5 года назад для прокачки скиллов в верстке и нативном JavaScript.',
       functional: [
         {
           id: 1,
@@ -285,7 +285,7 @@ export const projects = [
       },
     ],
     popupInfo: {
-      name: 'Сайт визитка garbuzov',
+      name: 'Сайт визитка garbuzovv',
       link: 'https://garbuzovv.ru/',
       stack: 'Vue.js (Composition API, Vue CLI, компонентный подход), HTML5/CSS3, SCSS, Webpack.',
       details: 'Сайт был разработан с 0, по уникальном дизайну с использованием Vue 3 и Composition API.',

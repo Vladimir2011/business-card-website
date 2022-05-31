@@ -53,16 +53,16 @@
           </div>
 
           <div v-show="selectedIndex === 3" class="about__main-text-container">
-            <div class="animate__animated animate__fadeInLeft">
-              <p class="about__main-text-header about__main-text-header-education">&lt;/Education&gt;</p>
 
+            <p class="about__main-text-header about__main-text-header-education animate__animated animate__fadeInLeft">&lt;/Education&gt;</p>
+            <div class="animate__animated animate__fadeInDown animate__delay-1s">
               <p class="about__main-text-job">Московский государственный строительный университет (2018 год)</p>
               <p class="about__main-text">Экономика, Экономика и управление на предприятии (Бакалавр)</p>
             </div>
 
-            <div class="animate__animated animate__fadeInLeft animate__delay-1s">
-              <p class="about__main-text-header about__main-text-header-education">&lt;/Courses&gt;</p>
 
+            <p class="about__main-text-header about__main-text-header-education animate__animated animate__fadeInLeft animate__delay-2s">&lt;/Courses&gt;</p>
+            <div class="animate__animated animate__fadeInDown animate__delay-3s">
               <p class="about__main-text-job">Треки по Frontend-разработке на Хекслет (2022 год)</p>
               <p class="about__main-text">Хекслет</p>
               <p class="about__main-text-job">Курс Vue.js (2021 год)</p>

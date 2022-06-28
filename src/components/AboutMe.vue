@@ -1,4 +1,4 @@
-<!--Полностью переписать этот компонент (позже)-->
+<!--Позже полностью переписать этот компонент-->
 <template>
   <section class="about" id="about">
     <div class="about__container">

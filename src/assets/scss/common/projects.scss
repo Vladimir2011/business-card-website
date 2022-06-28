@@ -1,7 +1,7 @@
 .projects {
   padding-bottom: 60px;
   .projects__header {
-    padding-bottom: 64px;
+    padding-bottom: 30px;
   }
   .projects__wrapper {
     .projects__list {
@@ -25,7 +25,7 @@
   .projects {
     padding-bottom: 24px;
     .projects__header {
-      padding-bottom: 40px;
+      padding-bottom: 25px;
     }
   }
 }
@@ -33,14 +33,21 @@
 @media screen and (max-width: $tableWidth) {
   .projects {
     .projects__header {
-      padding-bottom: 32px;
+      padding-bottom: 30px;
     }
     .projects__wrapper {
       .projects__list {
         flex-direction: column;
+        margin-bottom: 30px;
         .projects__item {
           width: 100%;
           margin: 0 0 32px 0;
+        }
+      }
+
+      &:last-child {
+        .projects__list {
+          margin-bottom: 0;
         }
       }
     }

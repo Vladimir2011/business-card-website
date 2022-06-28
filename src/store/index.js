@@ -120,7 +120,7 @@ export const store = createStore({
         id: 12
       },
     ],
-    projects: [
+    commerceProjects: [
       {
         name: 'Gaijin Entertainment',
         type: '_e-commerce',
@@ -237,7 +237,9 @@ export const store = createStore({
           ],
           additional: ''
         }
-      },
+      }
+    ],
+    petProjects: [
       {
         name: 'CleverBaby',
         type: '_landing-page',
@@ -352,8 +354,11 @@ export const store = createStore({
     getSkills(state) {
       return state.skills
     },
-    getProjects(state) {
-      return state.projects
+    getCommerceProjects(state) {
+      return state.commerceProjects
+    },
+    getPetProjects(state) {
+      return state.petProjects
     }
   }
 })

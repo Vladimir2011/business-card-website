@@ -195,7 +195,6 @@
           </CategoryItem>
         </ul>
       </div>
-
       <!--Конец планшета и мобилки-->
     </div>
   </section>
@@ -204,8 +203,8 @@
 <script>
 import TabItem from '@/components/tabs/TabItem'
 import CategoryItem from '@/components/categories/CategoryItem'
-import { categories, skills } from '@/_config'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useStore } from 'vuex'
 
 export default {
   components: {
@@ -213,8 +212,9 @@ export default {
     CategoryItem
   },
   setup () {
-    let tabs = categories
-    let skillsList = skills
+    const store = useStore()
+    let tabs = computed(() => store.getters['getCategories'])
+    let skillsList = computed(() => store.getters['getSkills'])
     let selectedIndex = ref(0)
 
     let isOpenTabs = ref({

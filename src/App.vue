@@ -22,16 +22,19 @@ import AboutMe from "@/components/AboutMe"
 import Projects from "@/components/Projects"
 import Contacts from '@/components/Contacts'
 import Footer from '@/components/Footer'
-import { app } from '@/_config'
+import { useStore } from 'vuex'
+import { computed } from 'vue'
 
 export default {
   components: { Header, Meeting, Features, AboutMe, Projects, Contacts, Footer },
   setup () {
-    const title = app.title
-    document.title = title
+    const store = useStore()
+
+    const getApp = computed(() => store.getters['getApp'])
+    document.title = getApp.value
 
     return {
-      title
+      getApp
     }
   },
 }

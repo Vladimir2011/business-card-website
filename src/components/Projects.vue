@@ -70,14 +70,15 @@
 <script>
 import Modal from '@/components/Modal'
 import Button from '@/components/Button'
-import { ref } from 'vue'
-import { projects } from "@/_config";
+import { ref, computed } from 'vue'
+import { useStore } from "vuex"
 
 export default {
   components: { Modal, Button },
 
   setup () {
-    let projectsList = projects
+    const store = useStore()
+    let projectsList = computed(() => store.getters['getProjects'])
     let popupIsOpen = ref(false)
     let projectPopup = ref({})
 
@@ -85,7 +86,7 @@ export default {
     const openPopup = (event) => {
       popupIsOpen.value = true
 
-      projectsList.forEach((item) => {
+      projectsList.value.forEach((item) => {
         if (item.id === +event.target.id) {
           projectPopup.value = item.popupInfo
         }

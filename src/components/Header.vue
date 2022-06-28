@@ -45,16 +45,17 @@
 
 <script>
 import Button from '@/components/Button'
-import { links } from '@/_config'
-import { ref, watch } from "vue";
+import { ref, watch, computed } from "vue";
+import { useStore } from 'vuex'
 
 export default {
   components: {
     Button
   },
   setup () {
-    const linksList = ref(links)
+    const store = useStore()
     const isMenuOpen = ref(false)
+    const linksList = computed(() => store.getters['getLinks'])
 
     watch(isMenuOpen, (value) => {
       if (value) {
@@ -67,8 +68,8 @@ export default {
     })
 
     return {
-      linksList,
-      isMenuOpen
+      isMenuOpen,
+      linksList
     }
   }
 }

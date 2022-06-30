@@ -43,12 +43,12 @@
   </header>
 </template>
 
-<script>
-import Button from '@/components/Button'
-import { ref, watch, computed } from "vue";
+<script lang="ts">
+import Button from '@/components/Button.vue'
+import { ref, watch, computed, defineComponent } from "vue";
 import { useStore } from 'vuex'
 
-export default {
+export default defineComponent({
   components: {
     Button
   },
@@ -72,5 +72,5 @@ export default {
       linksList
     }
   }
-}
+})
 </script>

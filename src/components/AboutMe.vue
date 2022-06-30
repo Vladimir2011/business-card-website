@@ -200,13 +200,13 @@
   </section>
 </template>
 
-<script>
-import TabItem from '@/components/tabs/TabItem'
-import CategoryItem from '@/components/categories/CategoryItem'
-import { ref, computed } from 'vue'
+<script lang="ts">
+import TabItem from '@/components/tabs/TabItem.vue'
+import CategoryItem from '@/components/categories/CategoryItem.vue'
+import { ref, computed, defineComponent } from 'vue'
 import { useStore } from 'vuex'
 
-export default {
+export default defineComponent({
   components: {
     TabItem,
     CategoryItem
@@ -225,7 +225,7 @@ export default {
       fifthTabOpen: false
     })
 
-    const selectTab = (i) => {
+    const selectTab = (i:number) => {
       selectedIndex.value = i
 
       switch (i) {
@@ -252,5 +252,5 @@ export default {
       isOpenTabs
     }
   }
-}
+})
 </script>

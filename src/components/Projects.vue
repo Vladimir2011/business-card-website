@@ -38,7 +38,7 @@
                   :id="project.id"
                   :name="'view-project'"
                   :class-name="'project__button'"
-                  @buttonClick="openPopup($event)"
+                  @buttonClick="openPopupCommerce($event)"
                 />
                 <a
                   v-if="project.link !== ''"
@@ -93,7 +93,7 @@
                     :id="project.id"
                     :name="'view-project'"
                     :class-name="'project__button'"
-                    @buttonClick="openPopup($event)"
+                    @buttonClick="openPopupPet($event)"
                 />
                 <a
                     v-if="project.link !== ''"
@@ -122,13 +122,14 @@
   </Teleport>
 </template>
 
-<script>
-import Modal from '@/components/Modal'
-import Button from '@/components/Button'
-import { ref, computed } from 'vue'
+<script lang="ts">
+import Modal from '@/components/Modal.vue'
+import Button from '@/components/Button.vue'
+import { ref, computed, defineComponent } from 'vue'
 import { useStore } from "vuex"
+import { ProjectItem } from "@/store/state";
 
-export default {
+export default defineComponent({
   components: { Modal, Button },
 
   setup () {
@@ -139,11 +140,21 @@ export default {
     let projectPopup = ref({})
 
     // Проверяем по кнопке какого проекта мы нажали
-    const openPopup = (event) => {
+    const openPopupCommerce = (event:any) => {
       popupIsOpen.value = true
 
-      commerceProjectsList.value.forEach((item) => {
-        if (item.id === +event.target.id) {
+      commerceProjectsList.value.forEach((item:ProjectItem) => {
+        if (item.id == event.target.id) {
+          projectPopup.value = item.popupInfo
+        }
+      })
+    }
+
+    const openPopupPet = (event:any) => {
+      popupIsOpen.value = true
+
+      petProjectsList.value.forEach((item:ProjectItem) => {
+        if (item.id == event.target.id) {
           projectPopup.value = item.popupInfo
         }
       })
@@ -158,9 +169,10 @@ export default {
       petProjectsList,
       popupIsOpen,
       projectPopup,
-      openPopup,
+      openPopupCommerce,
+      openPopupPet,
       closePopup
     }
   }
-}
+})
 </script>

@@ -344,25 +344,30 @@ export const state: State = {
           icon: 'vue.svg',
           class: 'vue'
         },
+        {
+          id: 2,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
       ],
       popupInfo: {
         name: 'Сайт визитка garbuzovv',
         link: 'https://garbuzovv.ru/',
-        stack: 'Vue.js (Composition API, Vue CLI, компонентный подход), HTML5/CSS3, SCSS, Webpack.',
-        details: 'Сайт был разработан с 0, по уникальном дизайну с использованием Vue 3 и Composition API.',
+        stack: 'Vue.js (Composition API, Vue CLI, компонентный подход, Vuex), TypeScript, HTML5/CSS3, SCSS, Webpack.',
+        details: 'Сайт был разработан с 0 по уникальном дизайну с использованием Vue 3 и Composition API. Позже приложение было переписано на TypeScript с добавлением Vuex.',
         functional: [
           {
             id: 1,
-            name: 'Адаптивная и кросс-браузерная верстка'
+            name: 'Адаптивная и кросс-браузерная верстка c использованием препроцессоров'
           },
           {
             id: 2,
-            name: 'Разработка компонентов и написание логики на Vue.js'
+            name: 'Разработка компонентов и написание логики на Vue.js + TypeScript + Vuex'
           }
         ],
         additional: {
           name: 'Планы на будущее',
-          info: 'Добавить локализацию на сайт. Написать бекенд на Node.js + MongoDB. Произвести миграцию на Nuxt.js + Vuex. Переписать все на TypeScript. Создать админку на Vuetify для более удобного изменения и добавления контента на сайт.'
+          info: 'Добавить локализацию на сайт. Добавить страницу собственного блога ( с добавлением Vue-Router ). Написать бекенд на Node.js + MongoDB.Создать админку на Vuetify для более удобного изменения и добавления контента на сайт.'
         }
       }
     },

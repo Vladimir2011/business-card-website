@@ -125,7 +125,7 @@
 <script>
 import Modal from '@/components/Modal'
 import Button from '@/components/Button'
-import { ref, computed } from 'vue'
+import { ref, computed, reactive } from 'vue'
 import { useStore } from "vuex"
 
 export default {
@@ -136,7 +136,7 @@ export default {
     let commerceProjectsList = computed(() => store.getters['getCommerceProjects'])
     let petProjectsList = computed(() => store.getters['getPetProjects'])
     let popupIsOpen = ref(false)
-    let projectPopup = ref({})
+    let projectPopup = reactive({})
 
     // Проверяем по кнопке какого проекта мы нажали
     const openPopup = (event) => {

@@ -296,6 +296,122 @@ export const state: State = {
         ],
         additional: ''
       }
+    },
+    {
+      name: 'Grey Shop',
+      type: '_e-commerce',
+      description: 'Grey-Shop - Интернет-магазин российского оборудования и одежды для косплея.',
+      image: 'grey-shop-image.png',
+      link: '',
+      id: 3,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'nuxt.svg',
+          class: 'nuxt'
+        },
+        {
+          id: 3,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
+      ],
+      popupInfo: {
+        name: 'Grey-Shop - Интернет-магазин российского оборудования и одежды для косплея.',
+        link: 'https://grey-shop.ru/',
+        details: '',
+        stack: 'Vue.js v.2 (Vuex, Vue-Router, компонентный подход), Nuxt.js (v.2), Vuex, Typescript/Javascript, Axios, HTML5/CSS3, SCSS, Webpack.',
+        functional: [
+          {
+            id: 1,
+            name: 'Полностью переписал сайт на современном стеке Nuxt.js + Vue.js.'
+          },
+          {
+            id: 2,
+            name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript.'
+          },
+          {
+            id: 3,
+            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+          },
+          {
+            id: 4,
+            name: 'Исправление багов.'
+          },
+          {
+            id: 5,
+            name: 'Поддержка и развитие текущей архитектуры на основе компонентов.'
+          },
+          {
+            id: 6,
+            name: 'SEO оптимизация.'
+          }
+        ],
+        additional: ''
+      }
+    },
+    {
+      name: 'Orion Spec',
+      type: '_e-commerce',
+      description: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея',
+      image: 'orion-spec-image.png',
+      link: '',
+      id: 3,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'nuxt.svg',
+          class: 'nuxt'
+        },
+        {
+          id: 3,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
+      ],
+      popupInfo: {
+        name: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея',
+        link: 'https://orion-spec.ru/',
+        details: 'Практически точная копия сайта Grey Shop (с некоторыми своими особенностями, к примеру наличие Saferoute). Направлен для работы с российскими потребителями.',
+        stack: 'Vue.js v.2 (Vuex, Vue-Router, компонентный подход), Nuxt.js (v.2), Vuex, Typescript/Javascript, Axios, HTML5/CSS3, SCSS, Webpack.',
+        functional: [
+          {
+            id: 1,
+            name: 'Полностью переписал сайт на современном стеке Nuxt.js + Vue.js.'
+          },
+          {
+            id: 2,
+            name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript.'
+          },
+          {
+            id: 3,
+            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+          },
+          {
+            id: 4,
+            name: 'Исправление багов.'
+          },
+          {
+            id: 5,
+            name: 'Поддержка и развитие текущей архитектуры на основе компонентов.'
+          },
+          {
+            id: 6,
+            name: 'SEO оптимизация.'
+          }
+        ],
+        additional: ''
+      }
     }
   ],
   petProjects: [

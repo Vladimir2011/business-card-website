@@ -361,7 +361,7 @@ export const state: State = {
       description: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея',
       image: 'orion-spec-image.png',
       link: '',
-      id: 3,
+      id: 4,
       technologies: [
         {
           id: 1,

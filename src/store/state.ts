@@ -358,7 +358,7 @@ export const state: State = {
     {
       name: 'Orion Spec',
       type: '_e-commerce',
-      description: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея',
+      description: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея.',
       image: 'orion-spec-image.png',
       link: '',
       id: 4,
@@ -383,6 +383,64 @@ export const state: State = {
         name: 'ОРИОН СПЕЦ - интернет-магазин российского снаряжения и одежды для косплея',
         link: 'https://orion-spec.ru/',
         details: 'Практически точная копия сайта Grey Shop (с некоторыми своими особенностями, к примеру наличие Saferoute). Направлен для работы с российскими потребителями.',
+        stack: 'Vue.js v.2 (Vuex, Vue-Router, компонентный подход), Nuxt.js (v.2), Vuex, Typescript/Javascript, Axios, HTML5/CSS3, SCSS, Webpack.',
+        functional: [
+          {
+            id: 1,
+            name: 'Полностью переписал сайт на современном стеке Nuxt.js + Vue.js.'
+          },
+          {
+            id: 2,
+            name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript.'
+          },
+          {
+            id: 3,
+            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+          },
+          {
+            id: 4,
+            name: 'Исправление багов.'
+          },
+          {
+            id: 5,
+            name: 'Поддержка и развитие текущей архитектуры на основе компонентов.'
+          },
+          {
+            id: 6,
+            name: 'SEO оптимизация.'
+          }
+        ],
+        additional: ''
+      }
+    },
+    {
+      name: 'Mordor Tac.',
+      type: '_e-commerce',
+      description: 'Mordor Tac. - производитель милитари одежды и экипировки.',
+      image: 'mordor-tac-image.png',
+      link: '',
+      id: 5,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'nuxt.svg',
+          class: 'nuxt'
+        },
+        {
+          id: 3,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
+      ],
+      popupInfo: {
+        name: 'Mordor Tac. - производитель милитари одежды и экипировки для спецподразделений и активного отдыха!',
+        link: 'https://mordor-tac.com',
+        details: '',
         stack: 'Vue.js v.2 (Vuex, Vue-Router, компонентный подход), Nuxt.js (v.2), Vuex, Typescript/Javascript, Axios, HTML5/CSS3, SCSS, Webpack.',
         functional: [
           {

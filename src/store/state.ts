@@ -33,7 +33,7 @@ export type PopupFunctionalItem = {
 
 export type PopupInfoItem = {
   name: string,
-  link: string,
+  link?: string,
   details: string,
   stack: string,
   functional: PopupFunctionalItem[],
@@ -125,58 +125,70 @@ export const state: State = {
       id: 3
     },
     {
+      name: 'Pinia',
+      icon: 'pinia-icon.svg',
+      class: 'pinia',
+      id: 4
+    },
+    {
       name: 'Vuetify',
       icon: 'vuetify-icon.svg',
       class: 'vuetify',
-      id: 4
+      id: 5
     },
     {
       name: 'JavaScript',
       icon: 'js-icon.svg',
       class: 'js',
-      id: 5
+      id: 6
     },
     {
       name: 'TypeScript',
       icon: 'ts-icon.svg',
       class: 'ts',
-      id: 6
+      id: 7
     },
     {
       name: 'SCSS/SASS',
       icon: 'scss-icon.svg',
       class: 'scss',
-      id: 7
+      id: 8
+    },
+    {
+      name: 'TailwindCSS',
+      icon: 'tailwindcss-icon.svg',
+      class: 'tailwindcss',
+      id: 9
     },
     {
       name: 'CSS',
       icon: 'css-icon.svg',
       class: 'css',
-      id: 8
+      id: 10
     },
     {
       name: 'HTML',
       icon: 'html-icon.svg',
       class: 'html',
-      id: 9
+      id: 11
     },
     {
       name: 'Webpack',
       icon: 'webpack-icon.svg',
       class: 'webpack',
-      id: 10
+      id: 12
     },
     {
       name: 'Node-js',
       icon: 'node-js-icon.svg',
       class: 'node-js',
-      id: 11
+      id: 13
     },
     {
       name: 'English',
       icon: 'english-icon.svg',
       class: 'english',
-      id: 12
+      id: 14
     },
   ],
   commerceProjects: [
@@ -474,44 +486,12 @@ export const state: State = {
   ],
   petProjects: [
     {
-      name: 'CleverBaby',
-      type: '_landing-page',
-      description: 'Школа английского языка для детей.',
-      image: 'cleverBaby-project-image.png',
-      link: 'https://github.com/Vladimir2011/CleverBaby/tree/develop',
-      id: 3,
-      technologies: [
-        {
-          id: 1,
-          icon: 'js.svg',
-          class: 'js'
-        }
-      ],
-      popupInfo: {
-        name: 'Сайт школы английского языка для детей CleverBaby',
-        link: 'https://vladimir2011.github.io/CleverBaby/',
-        stack: 'Javascript, HTML5/CSS3, Webpack.',
-        details: 'Пет-проект, который был написан мной 1,5 года назад для прокачки скиллов в верстке и нативном JavaScript.',
-        functional: [
-          {
-            id: 1,
-            name: 'Адаптивная и кросс-браузерная верстка.'
-          },
-          {
-            id: 2,
-            name: 'Написание логики на чистом JavaScript.'
-          }
-        ],
-        additional: ''
-      }
-    },
-    {
       name: 'Garbuzovv',
       type: '_landing-page',
       description: 'Сайт визитка прекрасного человека и разработчика.',
       image: 'garbuzov-project-image.png',
       link: 'https://github.com/Vladimir2011/business-card-website',
-      id: 4,
+      id: 1,
       technologies: [
         {
           id: 1,
@@ -546,33 +526,31 @@ export const state: State = {
       }
     },
     {
-      name: 'Online Bank',
-      type: '_pet-project',
-      description: 'Мини-версия банка с некоторыми возможностями.',
-      image: 'bank-project-image.png',
-      link: 'https://github.com/Vladimir2011/Vue-JS-PET-Projects/tree/master/Mini-bank-app',
-      id: 5,
+      name: 'Vue Pizza',
+      type: '_landing-page',
+      description: 'Личный проект на курсе по Vue.js 3 от HTML Academy.',
+      image: 'vue-pizza-project-image.png',
+      link: 'https://github.com/Vladimir2011/vue-third-pizza-start-source',
+      id: 2,
       technologies: [
         {
           id: 1,
           icon: 'vue.svg',
           class: 'vue'
-        },
+        }
       ],
       popupInfo: {
-        name: 'Приложение мини-банка',
-        link: 'https://vue-mini-bank.web.app/auth',
-        stack: 'HTML5, CSS3, Vue.js (Composition API, Vuex, Vue CLI, Vue-Router, компонентный подход), REST API (axios), Firebase.',
-        details: 'Приложение было написано на учебном курсе у Владилена Минина. Приложение на Vue.js с авторизацией и возможностью создавать, редактировать, удалять заявки. Есть фильтрация по статусу заявок. Настроены роуты, есть возможность посмотреть данные о каждой заявке, поменять статус.\n' +
-          'Для входа в приложение - почта: v@mail.ru. Пароль: 123456.',
+        name: 'Виртуальная пиццерия «VuePizza»',
+        stack: 'Vue.js 3 (Composition API, Vue CLI, компонентный подход, Pinia), HTML5/CSS3',
+        details: 'Учебный проект, который разрабатывался во время обучения на курсе. Это виртуальная пиццерия, в которой посетители могут сами составлять пиццу из ингредиентов, формировать и отправлять заказ.',
         functional: [
           {
             id: 1,
-            name: 'Адаптивная и кросс-браузерная верстка'
+            name: 'Разработка компонентов и написание логики на Vue.js + Pinia'
           },
           {
             id: 2,
-            name: 'Разработка компонентов и написание логики на Vue.js'
+            name: 'Написание логики для авторизации и взаимодествия с сервером'
           }
         ]
       }

@@ -149,7 +149,7 @@
 
               @keyframes loadVue {
                 0% { width: 0; }
-                100% { width: 70%; }
+                100% { width: 80%; }
               }
 
               .nuxt {
@@ -158,7 +158,7 @@
 
               @keyframes loadNuxt {
                 0% { width: 0; }
-                100% { width: 70%; }
+                100% { width: 80%; }
               }
 
               .vuex {
@@ -167,7 +167,16 @@
 
               @keyframes loadVuex {
                 0% { width: 0; }
-                100% { width: 70%; }
+                100% { width: 80%; }
+              }
+
+              .pinia {
+                animation: loadPinia 2.5s normal forwards;
+              }
+
+              @keyframes loadPinia {
+                0% { width: 0; }
+                100% { width: 80%; }
               }
 
               .vuetify {
@@ -185,7 +194,7 @@
 
               @keyframes loadJS {
                 0% { width: 0; }
-                100% { width: 70%; }
+                100% { width: 80%; }
               }
 
               .ts {
@@ -194,7 +203,7 @@
 
               @keyframes loadTS {
                 0% { width: 0; }
-                100% { width: 40%; }
+                100% { width: 50%; }
               }
 
               .scss {
@@ -206,13 +215,22 @@
                 100% { width: 90%; }
               }
 
+              .tailwindcss {
+                animation: loadTailwindCSS 2.5s normal forwards;
+              }
+
+              @keyframes loadTailwindCSS {
+                0% { width: 0; }
+                100% { width: 60%; }
+              }
+
               .webpack {
                 animation: loadWebpack 2.5s normal forwards;
               }
 
               @keyframes loadWebpack {
                 0% { width: 0; }
-                100% { width: 65%; }
+                100% { width: 70%; }
               }
 
               .html {
@@ -248,7 +266,7 @@
 
               @keyframes loadEnglish {
                 0% { width: 0; }
-                100% { width: 55%; }
+                100% { width: 60%; }
               }
             }
 

@@ -3,7 +3,7 @@
       <div class="modal__content">
         <h4 class="modal__header">{{ project.name }}</h4>
 
-        <div class="modal__link-wrapper">
+        <div v-if="project.link" class="modal__link-wrapper">
           <img src="@/static/svg/link-icon-popup.svg" alt="icon" class="modal__link-icon">
           <a :href="project.link" target="_blank" class="modal__link">{{ project.link }}</a>
         </div>
@@ -85,10 +85,11 @@
 
 <script>
 import { ref } from 'vue'
+import { ProjectItem } from '@/store/state'
 export default {
   props: {
     project: {
-      type: Object
+      type: ProjectItem
     },
     isOpen: {
       type: Boolean

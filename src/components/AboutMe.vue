@@ -28,7 +28,7 @@
           <div v-show="selectedIndex === 0" class="about__main-text-container">
             <p class="about__main-text-header animate__animated animate__fadeInLeft">&lt;/About me&gt;</p>
             <p class="about__main-text animate__animated animate__fadeInDown animate__delay-1s">
-              Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 2-х лет.
+              Давайте знакомиться! Меня зовут Владимир. Во Frontend разработке более 3-х лет.
               Умею и люблю разрабатывать интерфейсы различного уровня сложности. Постоянно практикуюсь и прокачиваю свои навыки.
             </p>
             <p class="about__main-text animate__animated animate__fadeInDown animate__delay-2s">Заинтересован в создании проектов, которыми мог бы гордиться.
@@ -43,7 +43,7 @@
 
             <div class="animate__animated animate__fadeInDown animate__delay-1s">
               <p class="about__main-text-job">Frontend-разрабочик в ООО “Грей-Шоп”</p>
-              <p class="about__main-text">Июнь 2021 - по настоящее время (более 2 лет)</p>
+              <p class="about__main-text">Июнь 2021 - по настоящее время (более 3 лет)</p>
             </div>
 
             <div class="animate__animated animate__fadeInDown animate__delay-2s">
@@ -63,11 +63,13 @@
 
             <p class="about__main-text-header about__main-text-header-education animate__animated animate__fadeInLeft animate__delay-2s">&lt;/Courses&gt;</p>
             <div class="animate__animated animate__fadeInDown animate__delay-3s">
+              <p class="about__main-text-job">Курс по Vue.js 3 (2024 год)</p>
+              <p class="about__main-text">Илья Кантор (learn.javascript.ru)</p>
               <p class="about__main-text-job">Vue.js 3. Разработка клиентских приложений (2023 год)</p>
               <p class="about__main-text">HTML Academy</p>
               <p class="about__main-text-job">Треки по Frontend-разработке на Хекслет (2022 год)</p>
               <p class="about__main-text">Хекслет</p>
-              <p class="about__main-text-job">Курс Vue.js (2021 год)</p>
+              <p class="about__main-text-job">Курс Vue.js 2/3 (2021 год)</p>
               <p class="about__main-text">Владилен Минин</p>
               <p class="about__main-text-job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
               <p class="about__main-text">Яндекс</p>
@@ -141,7 +143,7 @@
                 <div v-if="isOpenTabs.secondTabOpen && index === 1" class="about__main-text-container animate__animated animate__slideInDown">
                   <p class="about__main-text-header about__main-text-header-job">&lt;/Work experience&gt;</p>
                     <p class="about__main-text-job">Frontend-разрабочик в ООО “Грей-Шоп”</p>
-                    <p class="about__main-text">Июнь 2021 - по настоящее время (более 2 лет)</p>
+                    <p class="about__main-text">Июнь 2021 - по настоящее время (более 3 лет)</p>
 
                     <p class="about__main-text-job">Веб-разработчик (фриланс, пет-проекты)</p>
                     <p class="about__main-text">Апрель 2020 - Май 2021 (1 год 2 месяца)</p>
@@ -155,11 +157,13 @@
 
                     <p class="about__main-text-header about__main-text-header-education">&lt;/Courses&gt;</p>
 
+                    <p class="about__main-text-job">Курс по Vue.js 3 (2024 год)</p>
+                    <p class="about__main-text">Илья Кантор (learn.javascript.ru)</p>
                     <p class="about__main-text-job">Vue.js 3. Разработка клиентских приложений (2023 год)</p>
                     <p class="about__main-text">HTML Academy</p>
                     <p class="about__main-text-job">Треки по Frontend-разработке на Хекслет (2022 год)</p>
                     <p class="about__main-text">Хекслет</p>
-                    <p class="about__main-text-job">Курс Vue.js (2021 год)</p>
+                    <p class="about__main-text-job">Курс Vue.js 2/3 (2021 год)</p>
                     <p class="about__main-text">Владилен Минин</p>
                     <p class="about__main-text-job">Яндекс.Практикум (веб-разработчик) (2020 год)</p>
                     <p class="about__main-text">Яндекс</p>

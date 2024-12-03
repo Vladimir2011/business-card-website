@@ -85,11 +85,10 @@
 
 <script>
 import { ref } from 'vue'
-import { ProjectItem } from '@/store/state'
 export default {
   props: {
     project: {
-      type: ProjectItem
+      type: Object
     },
     isOpen: {
       type: Boolean

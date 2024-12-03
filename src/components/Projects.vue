@@ -55,6 +55,61 @@
       </ul>
     </div>
 
+    <h2 class="projects__header section-title">Личные проекты</h2>
+    <div class="projects__wrapper">
+      <ul class="projects__list">
+        <li
+            class="projects__item project"
+            v-for="(project) in personalProjectsList"
+            :key="project.id"
+        >
+          <div class="project__header-wrapper">
+            <p class="project__name">{{ project.name }}</p>
+            <p class="project__type"> // {{ project.type }}</p>
+          </div>
+
+          <div class="project__block">
+            <div class="project__image-wrapper">
+              <img :src="require('@/static/' + project.image)" alt="image" class="project__image">
+              <ul class="project__tech-list">
+                <li class="project__tech-item">
+                  <div
+                      v-for="tech in project.technologies"
+                      :key="tech.id"
+                      class="project__tech-image-wrapper"
+                      :class="tech.class"
+                  >
+                    <img :src="require('@/static/svg/technologies/' + tech.icon)" alt="icon" class="project__tech-image">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="project__description-wrapper">
+              <p class="project__description">
+                {{ project.description }}
+              </p>
+              <div class="project__button-wrapper">
+                <Button
+                    :id="project.id"
+                    :name="'view-project'"
+                    :class-name="'project__button'"
+                    @buttonClick="openPopupPersonal($event)"
+                />
+                <a
+                    v-if="project.link !== ''"
+                    :href="project.link"
+                    target="_blank"
+                    class="project__github-link"
+                >
+                  <img src="@/static/svg/github-project-icon.svg" alt="icon" class="project__button-github">
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
     <h2 class="projects__header section-title">Учебные проекты</h2>
     <div class="projects__wrapper">
       <ul class="projects__list">
@@ -109,6 +164,7 @@
         </li>
       </ul>
     </div>
+
   </section>
 
   <Teleport to="#modal">
@@ -127,7 +183,6 @@ import Modal from '@/components/Modal.vue'
 import Button from '@/components/Button.vue'
 import { ref, computed, defineComponent } from 'vue'
 import { useStore } from "vuex"
-import { ProjectItem } from "@/store/state";
 
 export default defineComponent({
   components: { Modal, Button },
@@ -136,6 +191,7 @@ export default defineComponent({
     const store = useStore()
     let commerceProjectsList = computed(() => store.getters['getCommerceProjects'])
     let petProjectsList = computed(() => store.getters['getPetProjects'])
+    let personalProjectsList = computed(() => store.getters['getPersonalProjects'])
     let popupIsOpen = ref(false)
     let projectPopup = ref({})
 
@@ -143,7 +199,7 @@ export default defineComponent({
     const openPopupCommerce = (event:any) => {
       popupIsOpen.value = true
 
-      commerceProjectsList.value.forEach((item:ProjectItem) => {
+      commerceProjectsList.value.forEach((item: any) => {
         if (item.id == event.target.id) {
           projectPopup.value = item.popupInfo
         }
@@ -153,7 +209,17 @@ export default defineComponent({
     const openPopupPet = (event:any) => {
       popupIsOpen.value = true
 
-      petProjectsList.value.forEach((item:ProjectItem) => {
+      petProjectsList.value.forEach((item: any) => {
+        if (item.id == event.target.id) {
+          projectPopup.value = item.popupInfo
+        }
+      })
+    }
+
+    const openPopupPersonal = (event:any) => {
+      popupIsOpen.value = true
+
+      personalProjectsList.value.forEach((item: any) => {
         if (item.id == event.target.id) {
           projectPopup.value = item.popupInfo
         }
@@ -167,11 +233,13 @@ export default defineComponent({
     return {
       commerceProjectsList,
       petProjectsList,
+      personalProjectsList,
       popupIsOpen,
       projectPopup,
       openPopupCommerce,
       openPopupPet,
-      closePopup
+      closePopup,
+      openPopupPersonal
     }
   }
 })

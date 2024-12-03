@@ -34,5 +34,8 @@ export const getters: GetterTree<State, State> & Getters = {
   },
   getPetProjects(state: State) {
     return state.petProjects
+  },
+  getPersonalProjects(state: State) {
+    return state.personalProjects
   }
 }

@@ -57,7 +57,8 @@ export type State = {
   categories: CategoryItem[],
   skills: SkillItem[],
   commerceProjects: ProjectItem[],
-  petProjects: ProjectItem[]
+  petProjects: ProjectItem[],
+  personalProjects: ProjectItem[]
 }
 
 export const state: State = {
@@ -193,10 +194,10 @@ export const state: State = {
   ],
   commerceProjects: [
     {
-      name: 'Gaijin Entertainment',
+      name: 'Академия снаряжения',
       type: '_e-commerce',
-      description: 'Сайт магазина официального мерча Gaijin Entertainment.',
-      image: 'gaijin-project-image.png',
+      description: 'Мультибрендовый магазин, специализирующийся на тактическом снаряжении.',
+      image: 'academy-project-image.png',
       link: '',
       id: 1,
       technologies: [
@@ -217,9 +218,8 @@ export const state: State = {
         }
       ],
       popupInfo: {
-        name: 'Сайт магазина официального мерча Gaijin Entertainment \n' +
-          'для игр Enlsited и Warthunder',
-        link: 'https://gaijin.grey-shop.com',
+        name: 'Мультибрендовый магазин, специализирующийся на тактическом снаряжении, одежде, обвесе, оптике и электронике высокого качества.',
+        link: 'https://academygear.ru/',
         details: '',
         stack: 'Vue.js v.2 (Vuex, Vue-Router, компонентный подход), Nuxt.js (v.2), Typescript/Javascript, Axios, HTML5/CSS3, SCSS, Webpack.',
         functional: [
@@ -233,7 +233,7 @@ export const state: State = {
           },
           {
             id: 3,
-            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
           },
           {
             id: 4,
@@ -291,7 +291,7 @@ export const state: State = {
           },
           {
             id: 3,
-            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
           },
           {
             id: 4,
@@ -349,7 +349,7 @@ export const state: State = {
           },
           {
             id: 3,
-            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
           },
           {
             id: 4,
@@ -407,7 +407,7 @@ export const state: State = {
           },
           {
             id: 3,
-            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
           },
           {
             id: 4,
@@ -465,7 +465,7 @@ export const state: State = {
           },
           {
             id: 3,
-            name: 'Респонзивная верстка (по уникальному дизайну), логика различных компонентов.'
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
           },
           {
             id: 4,
@@ -482,9 +482,139 @@ export const state: State = {
         ],
         additional: ''
       }
-    }
+    },
+    {
+      name: 'Стяг',
+      type: '_e-commerce',
+      description: 'Интернет-магазин "Стяг".',
+      image: 'styag-project-image.png',
+      link: '',
+      id: 6,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'nuxt.svg',
+          class: 'nuxt'
+        },
+        {
+          id: 3,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
+      ],
+      popupInfo: {
+        name: 'Стяг - производство снаряжения и средств индивидуальной бронезащиты в Москве.',
+        link: 'https://styagbronya.ru/',
+        details: '',
+        stack: 'Vue.js v.3 (Pinia, Vue-Router, компонентный подход, Composition API), Nuxt.js (v.3), Pinia, Typescript/Javascript, HTML5/CSS3, SCSS, Vite.',
+        functional: [
+          {
+            id: 1,
+            name: 'Сайт спроектирован и создан с 0.'
+          },
+          {
+            id: 2,
+            name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + TypeScript + Pinia.'
+          },
+          {
+            id: 3,
+            name: 'Респонсивная верстка (по уникальному дизайну), логика различных компонентов.'
+          },
+          {
+            id: 4,
+            name: 'Исправление багов.'
+          },
+          {
+            id: 5,
+            name: 'Поддержка и развитие текущей архитектуры на основе компонентов.'
+          },
+          {
+            id: 6,
+            name: 'SEO оптимизация.'
+          }
+        ],
+        additional: ''
+      }
+    },
+    {
+      name: 'Mate Line',
+      type: '_landing-page',
+      description: 'Mate Line - многофункциональная платформа для e-commerce',
+      image: 'mateline-project-image.png',
+      link: '',
+      id: 1,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'ts.svg',
+          class: 'ts'
+        }
+      ],
+      popupInfo: {
+        name: 'Mate Line - многофункциональная платформа для e-commerce',
+        link: 'https://mateline.ru/',
+        stack: 'Vue.js v.3 (Pinia, Vue-Router, компонентный подход, Composition API), Nuxt.js (v.3), Pinia, Typescript/Javascript, HTML5/CSS3, SCSS, Vite.',
+        details: 'Сайт был разработан с 0 по уникальном дизайну с использованием Vue 3/Nuxt 3 и Composition API.',
+        functional: [
+          {
+            id: 1,
+            name: 'Адаптивная и кросс-браузерная верстка c использованием препроцессоров'
+          },
+          {
+            id: 2,
+            name: 'Разработка компонентов и написание логики на Vue.js + TypeScript'
+          },
+          {
+            id: 3,
+            name: 'Интеграция и "оживление" формы для отправления заявок в ЛК системы amoCRM'
+          }
+        ],
+      }
+    },
   ],
   petProjects: [
+    {
+      name: 'Vue Pizza',
+      type: '_landing-page',
+      description: 'Личный проект на курсе по Vue.js 3 от HTML Academy.',
+      image: 'vue-pizza-project-image.png',
+      link: 'https://github.com/Vladimir2011/vue-third-pizza-start-source',
+      id: 1,
+      technologies: [
+        {
+          id: 1,
+          icon: 'vue.svg',
+          class: 'vue'
+        },
+      ],
+      popupInfo: {
+        name: 'Виртуальная пиццерия «VuePizza»',
+        stack: 'Vue.js 3 (Composition API, Vue CLI, компонентный подход, Pinia), HTML5/CSS3',
+        details: 'Учебный проект, который разрабатывался во время обучения на курсе. Это виртуальная пиццерия, в которой посетители могут сами составлять пиццу из ингредиентов, формировать и отправлять заказ.',
+        functional: [
+          {
+            id: 1,
+            name: 'Разработка компонентов и написание логики на Vue.js + Pinia'
+          },
+          {
+            id: 2,
+            name: 'Написание логики для авторизации и взаимодествия с сервером'
+          }
+        ]
+      }
+    },
+  ],
+  personalProjects: [
     {
       name: 'Garbuzovv',
       type: '_landing-page',
@@ -508,7 +638,7 @@ export const state: State = {
         name: 'Сайт визитка garbuzovv',
         link: 'https://garbuzovv.ru/',
         stack: 'Vue.js (Composition API, Vue CLI, компонентный подход, Vuex), TypeScript, HTML5/CSS3, SCSS, Webpack.',
-        details: 'Сайт был разработан с 0 по уникальном дизайну с использованием Vue 3 и Composition API. Позже приложение было переписано на TypeScript с добавлением Vuex.',
+        details: 'Сайт был разработан с 0 по уникальном дизайну с использованием Vue 3 и Composition API. Позже приложение было переписано с использованием TypeScript и добавлением Vuex.',
         functional: [
           {
             id: 1,
@@ -519,40 +649,50 @@ export const state: State = {
             name: 'Разработка компонентов и написание логики на Vue.js + TypeScript + Vuex'
           }
         ],
-        additional: {
-          name: 'Планы на будущее',
-          info: 'Добавить локализацию на сайт. Добавить страницу собственного блога ( с добавлением Vue-Router ). Написать бекенд на Node.js + MongoDB.Создать админку на Vuetify для более удобного изменения и добавления контента на сайт.'
-        }
       }
     },
     {
-      name: 'Vue Pizza',
-      type: '_landing-page',
-      description: 'Личный проект на курсе по Vue.js 3 от HTML Academy.',
-      image: 'vue-pizza-project-image.png',
-      link: 'https://github.com/Vladimir2011/vue-third-pizza-start-source',
+      name: 'ZZZwiki',
+      type: '_website',
+      description: 'Сайт-вики по игре Zenless Zone Zero.',
+      image: 'zzz-project-image.png',
+      link: '',
       id: 2,
       technologies: [
         {
           id: 1,
           icon: 'vue.svg',
           class: 'vue'
+        },
+        {
+          id: 2,
+          icon: 'ts.svg',
+          class: 'ts'
         }
       ],
       popupInfo: {
-        name: 'Виртуальная пиццерия «VuePizza»',
-        stack: 'Vue.js 3 (Composition API, Vue CLI, компонентный подход, Pinia), HTML5/CSS3',
-        details: 'Учебный проект, который разрабатывался во время обучения на курсе. Это виртуальная пиццерия, в которой посетители могут сами составлять пиццу из ингредиентов, формировать и отправлять заказ.',
+        name: 'Полная база данных по игре Zenless Zone Zero. (САЙТ ЕЩЕ НАХОДИТСЯ В РАЗРАБОТКЕ)',
+        link: 'https://zenless-zone-zero-wiki.vercel.app/',
+        stack: 'Vue.js 3 + Nuxt.js 3, Pinia, HTML5/CSS3, SCSS, Vite.',
+        details: 'Это википедию по игре Zenless Zone Zero! Здесь собраны все важные аспекты, связанные с игрой. Моя цель — создать пространство, где поклонники могут легко находить информацию, делиться своими знаниями и обсуждать любимые моменты игры.\n',
         functional: [
           {
             id: 1,
-            name: 'Разработка компонентов и написание логики на Vue.js + Pinia'
+            name: 'Адаптивная и кросс-браузерная верстка c использованием препроцессоров.'
           },
           {
             id: 2,
-            name: 'Написание логики для авторизации и взаимодествия с сервером'
+            name: 'Разработка компонентов и написание логики на Vue.js + Nuxt.js + Pinia.'
+          },
+          {
+            id: 3,
+            name: 'Разработка дизайна.'
           }
-        ]
+        ],
+        additional: {
+          name: 'Планы на будущее',
+          info: 'Закончить сайт. Реализовать бекенд.'
+        }
       }
     }
   ]
